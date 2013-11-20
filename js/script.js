@@ -10,17 +10,20 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($, Drupal, window, document, undefined) {
+// (function ($, Drupal, window, document, undefined) {
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
+// Drupal.behaviors.my_custom_behavior = {
+//   attach: function(context, settings) {
 
-    // Place your code here.
+//     // Place your code here.
 
-  }
-};
+//   }
+// };
+(function ($) {  
+  $(document).ready(function() {
+    // $('#block-menu-block-4').prepend('<div class="menu-icons"></div>');
+  });
 
-
-})(jQuery, Drupal, this, this.document);
+})(jQuery);

@@ -54,8 +54,11 @@ header {
   @extend %adv-gradient;
 }
 
-.section-sulmsee-triathlon header {
+body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
+body.section-sulmsee-triathlon {
+  header {
   @extend %adv-gradient-sulmsee;
+  }
 }
 
 // BASIC FONT SIZE and LINK STYLING
@@ -96,12 +99,15 @@ header {
 
 // SULMSEE TRIATHLON LINK STYLING
 
-.section-sulmsee-triathlon [role="main"] {
-  li a, p a, span a, .download-file a, a:not(.tabs-primary__tab-link) {
-    color: $blue-top;
-    text-decoration: none;
-    &:hover {
-      color: $blue-bottom;
+body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
+body.section-sulmsee-triathlon {
+  [role="main"] {
+    li a, p a, span a, .download-file a, a:not(.tabs-primary__tab-link) {
+      color: $blue-top;
+      text-decoration: none;
+      &:hover {
+        color: $blue-bottom;
+      }
     }
   }
 }
@@ -200,18 +206,18 @@ header {
   }
 }
 
-.section-sulmsee-triathlon {
+body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
+body.section-sulmsee-triathlon {
     .block-menu-block {
-      background: image-url('menu-icons.png') 2em 0 no-repeat;
-      h2 {
-        padding-top: 2.15em;
-      }
-      .menu-block-wrapper {
-        background: lighten(black, 85%);
-        padding-top: 3.85em;
-        margin-top: -3.85em;
-        padding-bottom: .6em;
-      }
+      position: relative;
+        .menu-icons {
+          background: image-url('menu-icons.png') 2em 0 no-repeat;
+          position: absolute;
+          height: 38px;
+          width: 227px;
+          top: -18px;
+          top: -1.3rem;
+          }
       .menu__item.is-leaf {
         a:hover, a.active {
           color: $blue-top;
@@ -219,6 +225,26 @@ header {
       }
     }
 }
+
+// body.section-sulmsee-triathlon {
+//     .block-menu-block {
+//       background: image-url('menu-icons.png') 2em 0 no-repeat;
+//       h2 {
+//         padding-top: 2.15em;
+//       }
+//       .menu-block-wrapper {
+//         background: lighten(black, 85%);
+//         padding-top: 3.85em;
+//         margin-top: -3.85em;
+//         padding-bottom: .6em;
+//       }
+//       .menu__item.is-leaf {
+//         a:hover, a.active {
+//           color: $blue-top;
+//         }
+//       }
+//     }
+// }
 
 // ============================================
 // HEADER
@@ -248,11 +274,13 @@ h1, h2, h3 {
   color: $red-top;
 }
 
-.section-sulmsee-triathlon {
+body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
+body.section-sulmsee-triathlon {
   h1, h2, h3 {
   color: $blue-top;
 }
 }
+
 
 // ============================================
 // MAIN NAVIGATION
@@ -285,9 +313,15 @@ nav {
   }
 }
 
-.section-sulmsee-triathlon nav li a:hover, .section-sulmsee-triathlon nav a.active {
-  color: $blue-top;
+body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
+body.section-sulmsee-triathlon {
+  nav li {
+    a:hover, a.active {
+        color: $blue-top;
+    }
+  }
 }
+
 
 // labels
 
