@@ -1,0 +1,46 @@
+// ======================================
+// Placeholders and extensions by criscom
+// ======================================
+
+%clearfix { //From SACFW _placeholder.scss line 1ff
+  @include clearfix;
+}
+
+// From SASS and Compass for Webdesigners _placeholder.scss line 4ff
+%single-transition {
+  @include single-transition(all, .3s, ease, 0s);
+}
+
+//From SACFW _placeholder.scss line 17ff
+%sb-menu-text-shadow {
+  @include single-text-shadow();
+}
+
+%adv-gradient {
+  background-color: $red-bottom;
+  @include filter-gradient($red-top, $red-bottom);
+  @include background(linear-gradient(top, $red-top, $red-bottom));
+}
+
+%adv-gradient-sulmsee {
+  background-color: $blue-bottom;
+  @include filter-gradient($blue-top, $blue-bottom);
+  @include background(linear-gradient(top, $blue-top, $blue-bottom));
+}
+
+%header-content {
+  color: $red-top;
+  font-size: 1.375em;
+  font-family: $oswaldbook;
+  text-transform: uppercase;
+}
+
+%link {
+  font-family: $oswaldbook;
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: lighten(black, 60%);
+  text-decoration: none;
+  text-transform: uppercase;
+  @extend %single-transition;
+}

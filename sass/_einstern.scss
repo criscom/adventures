@@ -1,0 +1,49 @@
+/**
+ * @file
+ * EINSTERN specific additions to the _init.scss file
+ *
+ * This file is reusable. Copy paste it into other projects and add
+ * @import "einstern" to the _init.scss file of the project
+ *
+ * Import additional mixins, variables
+ * @import "einstern";
+ */
+
+  /*! © EINSTERN Internet Serives 2013 www.einstern.at / pilcrow-studio.com / SASS used */
+
+ // criscom: Variable from SAFCD _layout.scss line 22
+$border-box-sizing: true;
+
+// criscom: Mixin variables ==> from SACFD _variables.scss line 20
+$defined-bs-type: border-box !default;
+
+// PATH TO CSS3 PIE
+// ====================================================================
+
+$path-to-pie: url('/sites/all/libraries/PIE/PIE.php');
+
+// Default values for text-shadow mixin ==> taken from SACFD _variables.scss line 29ff
+// ====================================================================
+
+$default-text-shadow-color: darken(black,20%);
+$default-text-shadow-blur: 0px;
+$default-text-shadow-v-offset: 1px;
+$default-text-shadow-h-offset: 1px;
+
+// Importing CSS3PIE
+@import "compass/css3/pie";
+
+// Importing %placeholders
+@import "placeholders";
+
+ /* Import Fonts */
+@import "fonts";
+
+input, select, img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}

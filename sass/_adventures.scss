@@ -1,0 +1,390 @@
+/**
+ * @file
+ *
+ * adventures subtheme
+ * base theme: ZEN 5.4
+ * development server @localhost; 
+ * path: htdocs/adventures
+ *
+ * author: criscom
+ * date: 20131104 / 04. November 2013
+ *
+**/ 
+
+* {
+  @include bs;
+}
+
+body {
+  @include establish-baseline;
+  background: #000 image-url("bg_body.jpg") left top repeat-x;
+  color: lighten(black, 40%);
+}
+
+::-moz-selection {
+  background-color: lighten($red-top, 25%);
+  text-shadow: none;
+}
+
+::selection {
+  background-color: lighten($red-top, 25%);
+  text-shadow: none;
+}
+
+#header,
+#main,
+#navigation,
+.region-sidebar-first,
+// .region-sidebar-second,
+#footer {
+  padding-right: .657894736%; // 8 / 1216
+  padding-left: .657894736%;
+}
+
+.region-sidebar-second {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#main, footer {
+  background-color: #fff;
+}
+
+header {
+  @extend %adv-gradient;
+}
+
+.section-sulmsee-triathlon header {
+  @extend %adv-gradient-sulmsee;
+}
+
+// BASIC FONT SIZE and LINK STYLING
+// ============================================
+
+[role="main"] {
+  p, 
+  li, 
+  li a, 
+  p a,
+  span,
+  div,
+  // span:not(.date-display-single), 
+  .download-file, 
+  div.field > a {
+  font-size: 14px;
+  font-size: .875rem;
+  }
+
+  li a, p a, span a, .download-file a, a:not(.tabs-primary__tab-link) {
+    color: $red-top;
+    text-decoration: none;
+    &:hover {
+      color: $red-bottom;
+    }
+  }
+}
+
+.result a {
+  background: transparent image-url("icon-stoppwatch.png") left center no-repeat;
+  display: block;
+  height: 3.5em;
+  padding-top: 2%;
+  padding-left: 3.5em;
+  margin-bottom: 1em;
+  line-height: 1.25em;
+}
+
+// SULMSEE TRIATHLON LINK STYLING
+
+.section-sulmsee-triathlon [role="main"] {
+  li a, p a, span a, .download-file a, a:not(.tabs-primary__tab-link) {
+    color: $blue-top;
+    text-decoration: none;
+    &:hover {
+      color: $blue-bottom;
+    }
+  }
+}
+
+// ============================================
+// CONTENT BLOCKS STYLING
+// WIDTHS SETTINGS
+// ============================================
+
+
+// CONTENT NO SIDEBAR
+// ============================================
+
+#content {
+  padding-left: 1.5833333333% !important; // 19 / 1200
+  padding-right: 0 !important;
+}
+
+// CONTENT NO SIDEBAR
+// DISPLAY SUITE 2 columns fluid
+// used for: Resultate Verein
+
+#content .node {
+   > .group-left {
+      width: 67.31583404%; // 795 / 1181 
+      padding-right: 1.778154107%; // 21 / 1181
+   }
+   > .group-right {
+      width: 32.68416596%; // 386 / 1181
+   }
+}
+
+// CONTENT and RIGHT SIDEBAR
+// ============================================
+.sidebar-second #content { // padding-left (19px) in line 44
+  width: 67.83333333%; // 814 / 1200
+  margin-right: -67.83333333%;
+}
+
+.sidebar-second .region-sidebar-second {
+  width: 32.16666667%; // 386 / 1200
+  margin-left: 67.83333333%
+}
+
+// CONTENT and right SIDEBAR
+// DISPLAY SUITE 2 columns fluid
+// used for: Athleten Verein
+
+.sidebar-second #content .ds-2col-fluid > .group-left {
+  width: 33.4591195%; // 266 / 795
+  padding-right: 0;
+}
+
+.sidebar-second #content .ds-2col-fluid > .group-right {
+  width: 66.5408805%; // 529 / 795
+  padding-left: 3.396226415%; // 27 / 795
+  padding-right: 2.641509434%; // 21 / 795
+ 
+}
+
+.sidebar-second #content .ds-1col {
+  margin-right: 24px;
+  margin-right: 1.5rem;
+}
+
+// RIGHT SIDEBAR MENU
+// ============================================
+
+.block-menu-block {
+  background: lighten(black, 85%);
+  padding-bottom: 16px;
+  padding-bottom: .5rem;
+  margin-top: 29px;
+  margin-top: 1.8rem;
+  h2 {
+    padding-top: 13px;
+    padding-top: .8rem;
+    padding-left: 32px;
+    padding-left: 2rem;
+  }
+  ul {
+    padding-left: 32px;
+    padding-left: 2rem !important;
+    .menu__item.is-leaf, .menu__item.is-collapsed {
+      list-style-image: none;
+      list-style-type: none;
+      a {
+        @extend %link;
+        font-size: 18px;
+        font-size: 1.125rem;
+        &:hover, &.active {
+          color: $red-top;
+        }
+      }
+    }
+  }
+}
+
+.section-sulmsee-triathlon {
+    .block-menu-block {
+      background: image-url('menu-icons.png') 2em 0 no-repeat;
+      h2 {
+        padding-top: 2.15em;
+      }
+      .menu-block-wrapper {
+        background: lighten(black, 85%);
+        padding-top: 3.85em;
+        margin-top: -3.85em;
+        padding-bottom: .6em;
+      }
+      .menu__item.is-leaf {
+        a:hover, a.active {
+          color: $blue-top;
+        }
+      }
+    }
+}
+
+// ============================================
+// HEADER
+// LOGO and ADDRESS
+// ============================================
+.header__region {
+  @include MQ(L) {
+    clear: none;
+    float: right;
+    margin-right: 12.5%; // 150 / 1200
+  }
+  font-size: 14px;
+  font-size: .875rem;
+  color: white;
+  font-family: $oswald;
+  .block, p {
+    margin-top: .15em;
+    margin-bottom: 0;
+  }
+}
+
+// HEADINGS
+
+h1, h2, h3 {
+  font-family: $oswaldbook;
+  text-transform: uppercase;
+  color: $red-top;
+}
+
+.section-sulmsee-triathlon {
+  h1, h2, h3 {
+  color: $blue-top;
+}
+}
+
+// ============================================
+// MAIN NAVIGATION
+// ============================================
+nav {
+  margin-top: 1em;
+  margin-left: 1em;
+  ul
+  {
+    li {
+      a {
+        @extend %link;
+        &:hover, &.active {
+          color: $red-top;
+        }
+      }
+    }
+    li:after {
+      color: lighten(black, 60%);
+      font-family: $oswaldbook;
+      font-size: 22px;
+      font-size: 1.375rem;
+      content: " | ";
+      padding: 0 1em;
+    }
+    li.last:after {
+      content: "";
+      padding: 0;
+    }
+  }
+}
+
+.section-sulmsee-triathlon nav li a:hover, .section-sulmsee-triathlon nav a.active {
+  color: $blue-top;
+}
+
+// labels
+
+.label {
+  font-weight: bold;
+}
+
+// ATHLETEN VEREIN DETAIL
+// ============================================
+
+.node-athleten h2 {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+.node-athleten .field-collection-container {
+  border-top: 1px solid #D3D7D9;
+  margin-top: 1em;
+  .field-collection-view {
+    margin-left: 0;
+  }
+}
+
+.field-collection-item-field-athleten-ergebnisse {
+  .right {
+    padding-right: .3em;
+  }
+
+}
+
+// .no-span .date-display-single {
+//   font-size: 1em !important;
+// }
+
+// ERGEBNISSE VEREIN DETAIL
+// ============================================
+
+// Field Collection: field_ergebnis_athleten
+
+.fc-header {
+  @extend %header-content;
+  font-size: 22px;
+  font-size: 1.375rem !important;
+}
+
+.fc-header-first {
+  padding-right: 4px;
+  padding-right: .25rem;
+}
+
+.fc-content {
+  margin: 0;
+}
+
+.fc-comment {
+  margin-top: 1em;
+}
+
+
+.field-slideshow-caption {
+  background-color: lighten(black, 80%);
+  border-bottom: 1px solid lighten(black, 60%);
+  span {
+    padding: .5em;
+    display: block;
+    line-height: 1em;
+    a {
+      font-size: 14px;
+      font-size: .875rem;
+      @extend %single-transition;
+    }
+  }
+}
+
+.field-slideshow-image {
+  border: 1px solid lighten(black, 60%);
+}
+
+// Ergebnisse Verein Detail END
+
+// FOOTER
+
+footer p {
+  padding: .3em 1em 0 1em;
+  margin: 0;
+  @extend %adv-gradient;
+  vertical-align: middle;
+  a {
+    font-family: $oswaldbook;
+    font-size: 22px;
+    font-size: 1.375rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    @extend %single-transition;
+    &:hover {
+      color: $red-top;
+    }
+  }
+}
