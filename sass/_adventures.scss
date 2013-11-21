@@ -122,6 +122,7 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 #content {
+  position: relative;
   padding-left: 1.5833333333% !important; // 19 / 1200
   padding-right: 0 !important;
 }
@@ -168,10 +169,17 @@ body.section-sulmsee-triathlon {
  
 }
 
-.sidebar-second #content .ds-1col {
+// CONTENT and right SIDEBAR
+// DISPLAY SUITE 1 column
+.sidebar-second #content .ds-1col, 
+// CONTENT VIEW and right SIDEBAR
+.sidebar-second #content .view
+{
   margin-right: 24px;
   margin-right: 1.5rem;
 }
+
+ 
 
 // RIGHT SIDEBAR MENU
 // ============================================
@@ -274,6 +282,11 @@ h1, h2, h3 {
   color: $red-top;
 }
 
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
 body.section-sulmsee-triathlon {
   h1, h2, h3 {
@@ -329,6 +342,64 @@ body.section-sulmsee-triathlon {
   font-weight: bold;
 }
 
+.label-blank {
+  font-weight: normal;
+}
+// ============================================
+// VIEWS SLIDESHOW
+// ============================================
+
+#slideshow {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+
+
+  .views-field-field-bild-slideshow .field-content {
+    max-width: 65.2138157%;
+    width: 65.2138157%;
+    float: left;
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        }
+      }
+  .views-field-body .field-content {
+    float: right;
+    width: 31.743421%;
+  }
+
+// OVERVIEW PAGES: VEREIN, ATHLETEN
+// ============================================
+
+.views-responsive-grid-horizontal {
+  .views-column {
+    float: left;
+    width: 49%;
+    .column-title {
+      color: $red-top;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-size: 1.25rem;
+    }
+  }
+  .views-column-last {
+    width: 50%;
+  }
+  .views-row {
+    margin-bottom: 12px;
+    margin-bottom: .75rem;
+    padding-bottom: 8px;
+    padding-bottom: .5rem;
+    border-bottom: 1px #D3D7D9 solid;
+    @extend %clearfix;
+  }
+}
+
 // ATHLETEN VEREIN DETAIL
 // ============================================
 
@@ -351,10 +422,6 @@ body.section-sulmsee-triathlon {
   }
 
 }
-
-// .no-span .date-display-single {
-//   font-size: 1em !important;
-// }
 
 // ERGEBNISSE VEREIN DETAIL
 // ============================================

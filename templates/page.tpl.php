@@ -51,9 +51,10 @@
   </header>
 
   <div id="main">
-
-    <div id="content" class="column" role="main">
+    <div id="slideshow" class="column">
       <?php print render($page['highlighted']); ?>
+    </div>
+    <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
