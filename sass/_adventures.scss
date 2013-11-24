@@ -352,14 +352,39 @@ body.section-sulmsee-triathlon {
 #slideshow {
   margin-top: 40px;
   margin-top: 2.5rem;
+  .region-highlighted .block {
+      &:after {
+        @extend %clearfix;
+      }
+  }
 }
 
+// For the shadow effect of the slideshow
+.view-content {
+  position: relative;
+  z-index: 1;
+}
 
+// Slideshow shadow
+  .flexslider {
+    @extend %box-shadow;
+  }
+
+.slides li {
+  margin: 12px 0;
+  margin: .75rem 0;
+  @extend %flex-content-gradient;
+}
 
   .views-field-field-bild-slideshow .field-content {
+    z-index: 10;
     max-width: 65.2138157%;
     width: 65.2138157%;
+    background:#FFF;
+    padding-right: 2%;
     float: left;
+    // margin: 12px 0;
+    // margin: .75rem 0;
       img {
         max-width: 100%;
         width: 100%;
@@ -370,8 +395,51 @@ body.section-sulmsee-triathlon {
       }
   .views-field-body .field-content {
     float: right;
-    width: 31.743421%;
+    width: 34.7861843%;
+    color: #FFF;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 3.5%;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
+
+  // Flexslider Navigation
+
+  .flex-control-nav {
+    text-align: right;
+    width: 784px;
+    width: 49rem;
+    right: 440px;
+    right: 27.5rem;
+  }
+
+  .flex-control-paging li a {
+    font-size: 20px;
+    font-size: 1.25rem;
+    text-indent: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    &.flex-active {
+      background: none;
+      color: $red-top;
+    }
+    &:hover {
+      background:none;
+      color: $red-top;
+    }
+  }
+
+
+.flex-direction-nav a {
+  padding: 10px 0;
+}
 
 // OVERVIEW PAGES: VEREIN, ATHLETEN
 // ============================================
@@ -468,6 +536,21 @@ body.section-sulmsee-triathlon {
 }
 
 // Ergebnisse Verein Detail END
+
+// Bildergalerien 
+
+.field-name-field-bild-galerie {
+  a img {
+  padding-right: 8px;
+  padding-right: .5rem;
+  }
+  a:nth-child(3n) img
+  {
+    padding-right: 0;
+  }
+
+}
+
 
 // FOOTER
 

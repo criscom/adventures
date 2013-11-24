@@ -35,6 +35,12 @@
   @include background(linear-gradient(top, $blue-top, $blue-bottom));
 }
 
+%flex-content-gradient {
+  background-color: $grey-bottom;
+  @include filter-gradient($grey-top, $grey-bottom);
+  @include background(linear-gradient(top, $grey-top, $grey-bottom));
+}
+
 %header-content {
   color: $red-top;
   font-size: 1.375em;
@@ -50,4 +56,84 @@
   text-decoration: none;
   text-transform: uppercase;
   @extend %single-transition;
+}
+
+%box-shadow // box shadow for teaser boxes "home", "bildergalerie"
+{
+  position: relative;
+  // border: 1px solid $color3;
+  border: none;
+  // padding: 12px 0;
+  // padding: .75rem 0;
+
+  @include box-shadow(0px 1px 4px -3px rgba(0, 0, 0, 0.3)); //, 0 0 40px rgba(0, 0, 0, 0.1) inset);
+  behavior: url('/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php'); // polyfill
+  border-radius: none !important;
+  &:before, &:after {
+  content: " ";
+  position: absolute;
+  z-index: -2;
+  //   content: '';
+  //   position: absolute;
+  //   z-index: -1;
+  //   left: 40px;
+  //   bottom: 15px;
+  //   width: 80%;
+  //   max-width: 300px;
+  //   max-height: 100px;
+  //   height: 35%;
+  //   @include box-shadow (0px 10px 12px rgba(0, 0, 0, 0.35));
+  //   @include transform(skew(-15deg) rotate(-6deg));
+  }
+    &:before {
+    // top: 10px;
+    // top: .625rem;
+    // bottom: 10px;
+    // bottom: .625rem;
+    top: 0;
+    bottom: 0;
+    right: 32px;//50%;
+    right: 2rem;
+    left: 32px;
+    right: 2rem;
+    // left: .625rem;
+    @include box-shadow(0 0 15px rgba(0,0,0,0.6));
+    border-radius: 100px / 10px; //10px / 100px;
+
+  }
+  &:after {
+    // right: 40px;
+    // left: auto;
+    // @include transform(skew(15deg) rotate(6deg));
+  }
+
+}
+
+
+%box-shadow-gabersdorf // box shadow for slideshow
+{
+  position: relative;
+  border: 1px solid #000;
+  background: #FFF;
+  @include box-shadow(0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(#000, 0.1) inset);
+  behavior: url('/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php'); // polyfill
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40px;
+    bottom: 15px;
+    width: 80%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 35%;
+    @include box-shadow (0px 10px 12px rgba(0, 0, 0, 0.35));
+    @include transform(skew(-15deg) rotate(-6deg));
+  }
+  &:after {
+    right: 40px;
+    left: auto;
+    @include transform(skew(15deg) rotate(6deg));
+  }
+
 }
