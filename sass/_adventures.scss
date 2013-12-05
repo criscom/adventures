@@ -491,6 +491,58 @@ body.section-sulmsee-triathlon {
 
 }
 
+// ERGEBNISSE VEREIN LANDING PAGE
+// ============================================
+
+.view-ergebnisse-verein {
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
+  margin-top: 1rem;
+  .views-row {
+    @extend %box-shadow-bottom;
+    display: block;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
+    .views-field-title a {
+      @extend %header-content;
+    }
+    .views-field-field-ergebnis-athleten 
+      ul {
+        padding-left: 0; 
+        li {
+          list-style: none;
+          list-style-image: none;
+          // padding-right: 32px;
+          // padding-right: 2rem;
+          padding-bottom: 16px;
+          padding-bottom: 1rem;
+          width: 32%;
+          float: left;
+          &:nth-child(3n+4) {
+            clear: left;
+          }
+          a {
+            @extend %link;
+            font-size: 18px;
+            font-size: 1.125rem;
+          }
+        }
+      }
+    .views-field-field-ergebnis-athleten .field-content .item-list:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    .views-field-view-node {
+      
+      padding-bottom: 16px;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
 // ERGEBNISSE VEREIN DETAIL
 // ============================================
 
@@ -551,6 +603,54 @@ body.section-sulmsee-triathlon {
 
 }
 
+// VEREIN Bildergalerie landing page
+// VEREIN NEWS landing page
+// ============================================
+
+.view-news-landing-page,
+.view-bildergalerien {
+  position: relative;
+  .view-content .views-row {
+    @extend %box-shadow-bottom;
+  }
+}
+
+.node-news-stefflhof-sulmsee,
+.view-mode-bildergalerie_landing_page {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  .group-left {
+    h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-bottom: .75rem;
+    @extend %header-content;
+    line-height: 1.375em;
+    }
+    p {
+      margin-top: 8px;
+      margin-top: .5rem;
+      margin-bottom: 8px;
+      margin-bottom: .5rem;
+    }
+    .field-name-node-link {
+
+    }
+  }
+}
+
+.section-sulmsee-triathlon .node-news-stefflhof-sulmsee {
+  h2 {
+    color: $blue-top;
+  }
+}
+
+.more-link {
+  display: block;
+  text-align: left;
+}
 
 // FOOTER
 
