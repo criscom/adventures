@@ -127,6 +127,10 @@ body.section-sulmsee-triathlon {
   padding-right: 0 !important;
 }
 
+.front #content {
+  padding-left: 0 !important;
+}
+
 // CONTENT NO SIDEBAR
 // DISPLAY SUITE 2 columns fluid
 // used for: Resultate Verein
@@ -276,7 +280,7 @@ body.section-sulmsee-triathlon {
 
 // HEADINGS
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: $oswaldbook;
   text-transform: uppercase;
   color: $red-top;
@@ -289,7 +293,7 @@ h2 {
 
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
 body.section-sulmsee-triathlon {
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
   color: $blue-top;
 }
 }
@@ -346,7 +350,7 @@ body.section-sulmsee-triathlon {
   font-weight: normal;
 }
 // ============================================
-// VIEWS SLIDESHOW
+// VIEWS SLIDESHOW // FLEXSLIDER
 // ============================================
 
 #slideshow {
@@ -378,10 +382,12 @@ body.section-sulmsee-triathlon {
 
   .views-field-field-bild-slideshow .field-content {
     z-index: 10;
-    max-width: 65.2138157%;
-    width: 65.2138157%;
+    // max-width: 65.2138157%;
+    // width: 65.2138157%;
+    max-width: 68%; // 793/1200
+    width: 68%; // 793/1200 // damit der weiße Abteiler stimmt, müssen wir das rechte Padding zur Breite dazu geben
+    padding-right: 1.916666667%; // 23/1200 = 1.916666667
     background:#FFF;
-    padding-right: 2%;
     float: left;
     // margin: 12px 0;
     // margin: .75rem 0;
@@ -394,8 +400,11 @@ body.section-sulmsee-triathlon {
         }
       }
   .views-field-body .field-content {
+    
     float: right;
-    width: 34.7861843%;
+    // width: 34.7861843%;
+    width: 31.166666667%; //32.08333333% - 1.916666667%;
+    margin-right: 0;
     color: #FFF;
     display: block;
     vertical-align: middle;
@@ -413,10 +422,10 @@ body.section-sulmsee-triathlon {
 
   .flex-control-nav {
     text-align: right;
-    width: 784px;
-    width: 49rem;
-    right: 440px;
-    right: 27.5rem;
+    width: 792px;
+    width: 49.5rem;
+    // right: 440px;
+    // right: 27.5rem;
   }
 
   .flex-control-paging li a {
@@ -441,6 +450,152 @@ body.section-sulmsee-triathlon {
   padding: 10px 0;
 }
 
+// ============================================
+// FRONTPAGE PANEL
+// ============================================
+
+#verein-landing-page {
+  .panel-flexible-inside {
+  }
+}
+
+.panels-flexible-region-inside {
+  padding: 0;
+}
+
+.panels-flexible-row {
+  padding-bottom: 22px;
+  padding-bottom: 1.375rem;
+  @extend %box-shadow;
+}
+
+.front-teaser {
+  min-height: 205px;
+  // height:auto !important;
+  // height: 206px;
+}
+
+.text-teaser {
+  padding: 0 12px;
+  padding: 0 .75rem;
+    h3, h4, h2.pane-title, a.more-link, p, h3 a {
+    color: white !important;
+  }
+  h3, h3 a, h4, h2.pane-title {
+    letter-spacing: 0.0625em;
+  }
+  a.more-link {
+    font-weight: bold;
+    &:hover {
+      color: $orange-top !important; 
+    }
+  }
+    h2 {
+    margin-top: 6px;
+    margin-top: .375rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+    line-height: 1.6em;
+  }
+    h3 {
+    margin-top: 8px;
+    margin-top: .5rem;
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    margin-bottom: .15rem;
+  }
+  p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 1px;
+  }
+  p, a.more-link {
+    font-size: .75rem;
+  }
+}
+
+// FIRST ROW
+// ============================================
+
+// Sulmsee Triathlon Image Teaser
+
+
+.image-teaser {
+  // width: 27.22039474%;
+  width: 33.91666667%; // 407/1200 = 33.91666667
+  @extend %adv-gradient-sulmsee;
+  line-height: 0;
+  padding: 0;
+  min-height: 208px;
+}
+
+// Sulmsee Triathlon Teaser
+
+.triathlon-teaser {
+  color: white;
+  @extend %front-teaser-385-23;
+  @extend %adv-gradient-sulmsee;
+  min-height: 208px;
+  h2 {
+    @include hide-text;
+    background: {
+      image: image-url('teaser-logo-front-sulmsee-tri.png');
+      repeat: no-repeat;
+      position: top left;
+      width: 100%;
+      height: auto;
+    }
+    width: 356px;
+    height: 74px;
+  }
+  .more-link {
+    margin-top: 20px;
+  }
+}
+
+// Adventures Teaser 
+
+.adventures-teaser {
+  @extend %front-teaser-385-23;
+  margin-right: 0;
+  color: white;
+  @extend %adv-gradient;
+  .more-link {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+// SECOND ROW
+// ============================================
+
+// Ergebnisse Sulm-Tri
+.erg-sulm-tri, .erg-verein, .news-teaser {
+  @extend %front-teaser-385-23;
+  @extend %adv-gradient-ergebnisse;
+  min-height: 285px;
+}
+
+.erg-sulm-tri {
+  @extend %front-teaser-22;
+}
+
+// Ergebnisse Verein
+
+// News
+
+.news-teaser {
+  margin-right: 0;
+  @extend %adv-gradient-news;
+  margin-right: 0;
+}
+
+// ============================================
 // OVERVIEW PAGES: VEREIN, ATHLETEN
 // ============================================
 
@@ -494,7 +649,7 @@ body.section-sulmsee-triathlon {
 // ERGEBNISSE VEREIN LANDING PAGE
 // ============================================
 
-.view-ergebnisse-verein {
+.not-front .view-ergebnisse-verein {
   position: relative;
   z-index: 1;
   margin-top: 16px;
@@ -607,7 +762,7 @@ body.section-sulmsee-triathlon {
 // VEREIN NEWS landing page
 // ============================================
 
-.view-news-landing-page,
+.not-front .view-news-landing-page,
 .view-bildergalerien {
   position: relative;
   .view-content .views-row {

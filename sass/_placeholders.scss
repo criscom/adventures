@@ -23,6 +23,15 @@
   @include single-text-shadow();
 }
 
+%front-teaser-385-23 {
+  width: 32.08333333%; // 385/1200 = 32.08333333
+  margin-right: 1.916666667%; // 23/1200 = 1.916666667
+}
+
+%front-teaser-22 {
+  margin-right: 1.833333333%; // 22/1200 = 1.833333333%
+}
+
 %adv-gradient {
   background-color: $red-bottom;
   @include filter-gradient($red-top, $red-bottom);
@@ -39,6 +48,18 @@
   background-color: $grey-bottom;
   @include filter-gradient($grey-top, $grey-bottom);
   @include background(linear-gradient(top, $grey-top, $grey-bottom));
+}
+
+%adv-gradient-ergebnisse {
+    background-color: $orange-bottom;
+  @include filter-gradient($orange-top, $orange-bottom);
+  @include background(linear-gradient(top, $orange-top, $orange-bottom));
+}
+
+%adv-gradient-news {
+  background-color: $green-bottom;
+  @include filter-gradient($green-top, $green-bottom);
+  @include background(linear-gradient(top, $green-top, $green-bottom));
 }
 
 %header-content {
@@ -103,6 +124,33 @@
     &:before {
     top: 32px;
     top: 2rem;
+    bottom: 0;
+    right: 32px;//50%;
+    right: 2rem;
+    left: 32px;
+    right: 2rem;
+    // left: .625rem;
+    @include box-shadow(0 0 15px rgba(0,0,0,0.6));
+    border-radius: 100px / 10px; //10px / 100px;
+
+  }
+}
+
+%box-shadow-front // box shadow for teaser boxes flexslider
+{
+  position: relative;
+  border: none;
+  @include box-shadow(0px 1px 4px -3px rgba(0, 0, 0, 0.3)); //, 0 0 40px rgba(0, 0, 0, 0.1) inset);
+  behavior: url('/sites/all/themes/adventures/PIE/PIE.php'); // polyfill
+  border-radius: none !important;
+  &:before, &:after {
+  content: " ";
+  position: absolute;
+  z-index: -2;
+
+  }
+    &:before {
+    top: 0;
     bottom: 0;
     right: 32px;//50%;
     right: 2rem;
