@@ -478,16 +478,31 @@ body.section-sulmsee-triathlon {
 .text-teaser {
   padding: 0 12px;
   padding: 0 .75rem;
-    h3, h4, h2.pane-title, a.more-link, p, h3 a {
+    h3, h4, h2.pane-title, a.more-link, p, h3 a, 
+    .field-name-field-name-des-athleten a,
+    .field-content a,
+    .weiter a
+    {
     color: white !important;
   }
   h3, h3 a, h4, h2.pane-title {
     letter-spacing: 0.0625em;
   }
-  a.more-link {
+  .field-name-field-name-des-athleten a {
+    font-size: 14px;
+    font-size: .875rem;
+    text-transform: uppercase;
+  }
+  // LINKS
+  a.more-link, 
+  .field-name-field-name-des-athleten a,
+  .field-content a,
+  .weiter a 
+  {
     font-weight: bold;
+    @extend %single-transition;
     &:hover {
-      color: $orange-top !important; 
+      color: $red-top !important; 
     }
   }
     h2 {
@@ -513,7 +528,13 @@ body.section-sulmsee-triathlon {
     margin-top: 0;
     margin-bottom: 1px;
   }
-  p, a.more-link {
+  p,
+  a.more-link, 
+  .entity-field-collection-item .field, 
+  .entity-field-collection-item span,
+  .field-content a,
+  .weiter a
+  {
     font-size: .75rem;
   }
 }
@@ -587,6 +608,34 @@ body.section-sulmsee-triathlon {
 
 // Ergebnisse Verein
 
+#verein-landing-page .views-field-field-ergebnis-athleten {
+  .field-content .item-list:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    }
+  .weiter a {
+    display: block;
+  }
+  ul {
+    padding-left: 0; 
+    li {
+      list-style: none;
+      list-style-image: none;
+      // padding-right: 32px;
+      // padding-right: 2rem;
+      // padding-bottom: 16px;
+      // padding-bottom: 1rem;
+      width: 100%;
+      float: left;
+      color: white;
+      &:nth-child(3n+4) {
+        clear: left;
+      }
+    }
+  }
+}
 // News
 
 .news-teaser {
@@ -809,19 +858,26 @@ body.section-sulmsee-triathlon {
 
 // FOOTER
 
+// Impressum
+
 footer p {
-  padding: .3em 1em 0 1em;
+  padding: 5px 8px;
+  padding: .3rem 1rem;
   margin: 0;
   @extend %adv-gradient;
   vertical-align: middle;
+  font-family: $oswaldbook;
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: white;
+  text-transform: uppercase;
+  .section-sulmsee-triathlon & {
+    @extend %adv-gradient-sulmsee;
+  }
   a {
-    font-family: $oswaldbook;
-    font-size: 22px;
-    font-size: 1.375rem;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
     @extend %single-transition;
+    text-decoration: none;
+    color: white;
     &:hover {
       color: $red-top;
     }

@@ -24,6 +24,8 @@
 (function ($) {  
   $(document).ready(function() {
     // $('#block-menu-block-4').prepend('<div class="menu-icons"></div>');
+    // Sponsoren Image Map
+    $('img[usemap]').rwdImageMaps();
   });
 
 })(jQuery);
