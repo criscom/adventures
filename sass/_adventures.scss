@@ -216,7 +216,7 @@ body.section-sulmsee-triathlon {
   ul {
     padding-left: 32px;
     padding-left: 2rem !important;
-    .menu__item.is-leaf, .menu__item.is-collapsed {
+    .menu__item.is-leaf, .menu__item.is-collapsed, .menu__item.is-expanded  {
       list-style-image: none;
       list-style-type: none;
       a {
@@ -229,6 +229,11 @@ body.section-sulmsee-triathlon {
       }
     }
   }
+}
+
+#block-menu-block-1, #block-menu-block-2, #block-menu-block-5 // Running Team Menu and TRI-Team MENU and Verein Menu
+{
+  margin-top: 0;
 }
 
 #block-menu-block-4 // Sulmsee Tri Menu ORGANISATION
@@ -263,7 +268,7 @@ body.section-sulmsee-triathlon {
           top: -18px;
           top: -1.3rem;
           }
-      .menu__item.is-leaf {
+      .menu__item.is-leaf, .menu__item.is-expanded {
         a:hover, a.active {
           color: $blue-top;
         }
@@ -368,7 +373,7 @@ nav {
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
 body.section-sulmsee-triathlon {
   nav li {
-    a:hover, a.active {
+    a:hover, a.active, a.active-trail {
         color: $blue-top;
     }
   }
@@ -500,7 +505,10 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 #verein-landing-page {
+  position: relative;
+  z-index: 1;
   .panel-flexible-inside {
+    @extend %box-shadow;
   }
 }
 
@@ -509,9 +517,20 @@ body.section-sulmsee-triathlon {
 }
 
 .panels-flexible-row {
+  z-index: 5;
+  background:#FFF;
   padding-bottom: 22px;
   padding-bottom: 1.375rem;
-  // @extend %box-shadow;
+  .panels-flexible-row-inside-first {
+    padding-top: 22px;
+    margin-top: 1.375rem;
+  }
+}
+
+.panels-flexible-row-1-1 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .front-teaser {
@@ -686,12 +705,16 @@ body.section-sulmsee-triathlon {
 
 // News Detail Verein
 
-.node-news-stefflhof-sulmsee .field-name-body {
-  p {
-    margin-bottom: 0;
+.node-news-stefflhof-sulmsee {
+  h2 {
+    margin-top: 0;
+  }
+   .field-name-body {
+    p {
+      margin-bottom: 0;
+    }
   }
 }
-
 
 // Sulmsee Triathlon NEWS Block
 // ============================================
@@ -1021,7 +1044,7 @@ body.section-sulmsee-triathlon {
 footer p {
   padding: 5px 8px;
   padding: .3rem 1rem;
-  margin: 0;
+  margin: 0 0 32px;
   @extend %adv-gradient;
   vertical-align: middle;
   font-family: $oswaldbook;

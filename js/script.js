@@ -26,6 +26,11 @@
     // $('#block-menu-block-4').prepend('<div class="menu-icons"></div>');
     // Sponsoren Image Map
     $('img[usemap]').rwdImageMaps();
+
+    // Ergebnis Detailseiten: Menüpunkt Ergebnis aktiv setzen
+        $("body.node-type-ergebnisse-verein li.menu-mlid-1022 a").addClass("active-trail").addClass("active");
+
+
   });
 
 })(jQuery);
