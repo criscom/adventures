@@ -198,18 +198,14 @@ body.section-sulmsee-triathlon {
   z-index: 1;
 }
 
-#block-menu-block-4 {
-  margin-top: 40px;
-  margin-top: 2.5rem;
-}
-
 .block-menu-block {
-  padding-bottom: 16px;
-  padding-bottom: .5rem;
+  padding-bottom: 8px;
   margin-top: 29px;
   margin-top: 1.8rem;
+  @extend %box-shadow-bottom;
   .block-wrapper {
     background: lighten(black, 85%);
+    padding-bottom: 1px;
   }
   h2 {
     padding-top: 13px;
@@ -231,6 +227,26 @@ body.section-sulmsee-triathlon {
           color: $red-top;
         }
       }
+    }
+  }
+}
+
+#block-menu-block-4 // Sulmsee Tri Menu ORGANISATION
+{
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  .menu-block-wrapper, h2 {
+    background: lighten(black, 85%);
+    padding-bottom: 1px;
+  }
+  h2 {
+    padding-bottom: 22px;
+    padding-bottom: 1.4rem;
+  }
+  .block-menu-block {
+    margin-top: 0;
+    ul.menu {
+      margin-top: 0;
     }
   }
 }
@@ -279,6 +295,7 @@ body.section-sulmsee-triathlon {
 // HEADER
 // LOGO and ADDRESS
 // ============================================
+
 .header__region {
   @include MQ(L) {
     clear: none;
@@ -319,6 +336,7 @@ body.section-sulmsee-triathlon {
 // ============================================
 // MAIN NAVIGATION
 // ============================================
+
 nav {
   margin-top: 1em;
   margin-left: 1em;
@@ -371,8 +389,8 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 #slideshow {
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: -40px;
+  margin-top: -2.5rem;
   .region-highlighted .block {
       &:after {
         @extend %clearfix;
@@ -460,6 +478,16 @@ body.section-sulmsee-triathlon {
       background:none;
       color: $red-top;
     }
+    .section-sulmsee-triathlon & {
+      &.flex-active {
+      background: none;
+      color: $blue-top;
+    }
+      &:hover {
+      background:none;
+      color: $blue-top;
+    }
+    }
   }
 
 
@@ -483,7 +511,7 @@ body.section-sulmsee-triathlon {
 .panels-flexible-row {
   padding-bottom: 22px;
   padding-bottom: 1.375rem;
-  @extend %box-shadow;
+  // @extend %box-shadow;
 }
 
 .front-teaser {
@@ -656,12 +684,25 @@ body.section-sulmsee-triathlon {
   margin-right: 0;
 }
 
+// News Detail Verein
+
+.node-news-stefflhof-sulmsee .field-name-body {
+  p {
+    margin-bottom: 0;
+  }
+}
+
 
 // Sulmsee Triathlon NEWS Block
 // ============================================
 
 #block-views-news-landing-page-block-2 {
-  background: $green-top;
+  @extend %box-shadow-bottom;
+  padding-bottom: 15px;
+  .block-wrapper {
+    @extend %adv-gradient-news;
+    padding-bottom: 1px;
+  }
   h2 {
     @extend %teaser-box-margins;
     padding-top: 4px;
@@ -674,10 +715,16 @@ body.section-sulmsee-triathlon {
   h2.block__title {
     display: none;
   }
-  .view-content .views-row {
+  .view-content {
+    .views-row {
     padding: 0 32px;
     padding: 0 2rem;
-    @extend %adv-gradient-news;
+    .node-news-stefflhof-sulmsee {
+      padding-bottom: 0;
+      margin-bottom: 26px;
+      margin-bottom: 1.6rem;
+    }
+    }
   }
   h2, h3, p, a.more-link {
     color: white;
@@ -873,7 +920,7 @@ body.section-sulmsee-triathlon {
 // VEREIN NEWS landing page
 // ============================================
 
-.not-front .view-news-landing-page,
+.page-verein-stefflhof-news .view-news-landing-page,
 .view-bildergalerien {
   position: relative;
   .view-content .views-row {
@@ -918,7 +965,38 @@ body.section-sulmsee-triathlon {
   text-align: left;
 }
 
+// ============================================
+// SULMSEE TRIATHLON LANDING PAGE
+// ============================================
+
+// CONTENT AREA box-shadow
+
+.not-front .panel-pane {
+  position: relative;
+  z-index: 1;
+  .ds-1col, .weather {
+    @extend %box-shadow-bottom;
+    padding-bottom: 16px;
+    padding-bottom: 1rem;
+    .field-collection-container {
+      border-bottom: 0;
+      margin-bottom: 0;
+      }
+    }
+}
+
+
+
 // WETTER DETAIL 
+
+.panel-pane {
+  p.forecast, .weather-symbol  {
+    float: left;
+    margin-top: 0;
+    margin-right: 32px;
+    margin-right: 2rem;
+  }
+}
 
 .page-weather-austria-styria-graz-1 table {
   font-size: 12px;
