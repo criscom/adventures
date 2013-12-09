@@ -31,6 +31,10 @@ body {
   text-shadow: none;
 }
 
+.block {
+  margin-bottom: 0;
+}
+
 #header,
 #main,
 #navigation,
@@ -60,6 +64,7 @@ body.section-sulmsee-triathlon {
   @extend %adv-gradient-sulmsee;
   }
 }
+
 
 // BASIC FONT SIZE and LINK STYLING
 // ============================================
@@ -188,12 +193,24 @@ body.section-sulmsee-triathlon {
 // RIGHT SIDEBAR MENU
 // ============================================
 
+.region-sidebar-second {
+  position: relative;
+  z-index: 1;
+}
+
+#block-menu-block-4 {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
 .block-menu-block {
-  background: lighten(black, 85%);
   padding-bottom: 16px;
   padding-bottom: .5rem;
   margin-top: 29px;
   margin-top: 1.8rem;
+  .block-wrapper {
+    background: lighten(black, 85%);
+  }
   h2 {
     padding-top: 13px;
     padding-top: .8rem;
@@ -451,7 +468,7 @@ body.section-sulmsee-triathlon {
 }
 
 // ============================================
-// FRONTPAGE PANEL
+// FRONTPAGE PANEL // SULMSEE NEWS BLOCK
 // ============================================
 
 #verein-landing-page {
@@ -506,12 +523,7 @@ body.section-sulmsee-triathlon {
     }
   }
     h2 {
-    margin-top: 6px;
-    margin-top: .375rem;
-    border-bottom: 1px solid white;
-    margin-bottom: 8px;
-    margin-bottom: .5rem;
-    line-height: 1.6em;
+      @extend %teaser-box-margins;
   }
     h3 {
     margin-top: 8px;
@@ -524,7 +536,6 @@ body.section-sulmsee-triathlon {
     margin-bottom: .15rem;
   }
   p {
-    font-size: 12px;
     margin-top: 0;
     margin-bottom: 1px;
   }
@@ -535,6 +546,7 @@ body.section-sulmsee-triathlon {
   .field-content a,
   .weiter a
   {
+    font-size: 12px;
     font-size: .75rem;
   }
 }
@@ -642,6 +654,56 @@ body.section-sulmsee-triathlon {
   margin-right: 0;
   @extend %adv-gradient-news;
   margin-right: 0;
+}
+
+
+// Sulmsee Triathlon NEWS Block
+// ============================================
+
+#block-views-news-landing-page-block-2 {
+  background: $green-top;
+  h2 {
+    @extend %teaser-box-margins;
+    padding-top: 4px;
+    padding-top: .25rem;
+    margin-left: 32px;
+    margin-left: 2rem;
+    margin-right: 32px;
+    margin-right: 2rem;
+  }
+  h2.block__title {
+    display: none;
+  }
+  .view-content .views-row {
+    padding: 0 32px;
+    padding: 0 2rem;
+    @extend %adv-gradient-news;
+  }
+  h2, h3, p, a.more-link {
+    color: white;
+  }
+  h3, p {
+    @extend %teaser-box-margins;
+    border-bottom: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  p, a.more-link {
+    font-size: 12px;
+    font-size: .75rem;
+  }
+  a.more-link
+    {
+    margin-top: 8px;
+    margin-top: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    @extend %single-transition;
+    &:hover {
+      color: $blue-top !important; 
+    }
+  }
 }
 
 // ============================================
@@ -854,6 +916,24 @@ body.section-sulmsee-triathlon {
 .more-link {
   display: block;
   text-align: left;
+}
+
+// WETTER DETAIL 
+
+.page-weather-austria-styria-graz-1 table {
+  font-size: 12px;
+  font-size: .75rem;
+    td {
+    vertical-align: middle;
+    text-align: center;
+    span {
+      font-size: 12px;
+      font-size: .75rem;
+    }
+    img {
+      float: left
+    }
+  }
 }
 
 // FOOTER

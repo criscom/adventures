@@ -119,7 +119,6 @@
   content: " ";
   position: absolute;
   z-index: -2;
-
   }
     &:before {
     top: 32px;
@@ -132,7 +131,6 @@
     // left: .625rem;
     @include box-shadow(0 0 15px rgba(0,0,0,0.6));
     border-radius: 100px / 10px; //10px / 100px;
-
   }
 }
 
@@ -161,6 +159,17 @@
     border-radius: 100px / 10px; //10px / 100px;
 
   }
+}
+
+// margins for teaser box headers like "NEWS" applied to h2s
+
+%teaser-box-margins {
+  margin-top: 6px;
+  margin-top: .375rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 8px;
+  margin-bottom: .5rem;
+  line-height: 1.6em;
 }
 
 
