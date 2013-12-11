@@ -324,6 +324,12 @@ body.section-sulmsee-triathlon {
   }
 }
 
+.header__logo-image {
+  @include MQ(Sextra) {
+    width: 300px!important;
+  }
+}
+
 // HEADINGS
 
 h1, h2, h3, h4 {
@@ -492,6 +498,9 @@ body.section-sulmsee-triathlon {
   margin: 12px 0;
   margin: .75rem 0;
   @extend %flex-content-gradient;
+  @include MQ(Sextra) {
+    margin-bottom: 12px;
+  }
 }
 
   .views-field-field-bild-slideshow .field-content {
@@ -535,6 +544,13 @@ body.section-sulmsee-triathlon {
       line-height: 28px;
       line-height: 1.75rem;
     }
+    @include MQ(Sextra) {
+      padding-top: 1%;
+      font-size: 14px;
+      font-size: .875rem;
+      line-height: 22px;
+      line-height: 1.375rem;
+    }
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -559,6 +575,10 @@ body.section-sulmsee-triathlon {
     background: none;
     border-radius: 0;
     box-shadow: none;
+    @include MQ(Sextra) {
+      font-size: 14px;
+      font-size: .875rem;
+    }
     &.flex-active {
       background: none;
       color: $red-top;
@@ -697,6 +717,9 @@ body.section-sulmsee-triathlon {
   min-height: 208px;
   @media only screen and (min-width: 961px) and (max-width: 67.3125em) {
     min-height: 225px;
+  }
+  @include MQ(Sextra) {
+    min-height: 209px;
   }
   @include MQ(S) {
     display: none;

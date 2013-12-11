@@ -52,6 +52,11 @@
       @content;
     }
   }
+  @if $canvas == Sextra {
+  @media only screen and (max-width: $Sextra) { // 520
+    @content;
+  }
+  }
   @else if $canvas == M {
     @media only screen and (max-width: $M) { // 481 - 700
       @content;
