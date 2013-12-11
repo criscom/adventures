@@ -49,6 +49,10 @@ stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 
+; MMENU stylesheet
+; stylesheets[all][] = css/jquery.mmenu.all.css
+; stylesheets[all][] = css/jquery.mmenu.positioning.css
+
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
 ; Royal Slider
@@ -74,7 +78,14 @@ stylesheets[all][] = css/styles.css
 
 scripts[] = js/script.js
 scripts[] = js/css_browser_selector.js
+
+; Image Maps jQuery
 scripts[] = js/jquery.rwdImageMaps.min.js
+
+; Responsive Menu for Sidebar menus 
+; http://mmenu.frebsite.nl
+; scripts[] = js/jquery.mmenu.min.all.js
+
 ;scripts[] = js/royalslider.js
 ;scripts[] = js/royal-slider/jquery.easing-1.3.js
 ;scripts[] = js/royal-slider/jquery.royalslider.js

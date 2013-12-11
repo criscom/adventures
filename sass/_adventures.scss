@@ -155,11 +155,20 @@ body.section-sulmsee-triathlon {
 .sidebar-second #content { // padding-left (19px) in line 44
   width: 67.83333333%; // 814 / 1200
   margin-right: -67.83333333%;
+  @include MQ(M) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .sidebar-second .region-sidebar-second {
   width: 32.16666667%; // 386 / 1200
-  margin-left: 67.83333333%
+  margin-left: 67.83333333%;
+  @include MQ(M) {
+    clear: left;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 // CONTENT and right SIDEBAR
@@ -208,8 +217,8 @@ body.section-sulmsee-triathlon {
     padding-bottom: 1px;
   }
   h2 {
-    padding-top: 13px;
-    padding-top: .8rem;
+    // padding-top: 13px;
+    // padding-top: .8rem;
     padding-left: 32px;
     padding-left: 2rem;
   }
@@ -245,6 +254,8 @@ body.section-sulmsee-triathlon {
     padding-bottom: 1px;
   }
   h2 {
+    padding-top: 13px;
+    padding-top: .8rem;
     padding-bottom: 22px;
     padding-bottom: 1.4rem;
     @include MQ(L) {
@@ -342,6 +353,10 @@ h2 {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.75em;
+}
+
+#content h2 {
+  margin-top: 0;
 }
 
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
@@ -868,6 +883,7 @@ body.section-sulmsee-triathlon {
 #block-views-news-landing-page-block-2 {
   @extend %box-shadow-bottom;
   padding-bottom: 15px;
+  margin-top: -5px;
   .block-wrapper {
     @extend %adv-gradient-news;
     padding-bottom: 1px;
@@ -1028,6 +1044,16 @@ body.section-sulmsee-triathlon {
 // ERGEBNISSE VEREIN DETAIL
 // ============================================
 
+.node-ergebnisse-verein .group-right,
+.node-ergebnisse-verein .group-left {
+  @include MQ(M) {
+    clear: left;
+    float: left;
+    width: 100% !important;
+  }
+}
+
+
 // Field Collection: field_ergebnis_athleten
 
 .fc-header {
@@ -1087,8 +1113,10 @@ body.section-sulmsee-triathlon {
 
 // VEREIN Bildergalerie landing page
 // VEREIN NEWS landing page
+// SULMSEE TRIATHLON NEWS landing page
 // ============================================
 
+.page-sulmsee-triathlon-news .view-news-landing-page,
 .page-verein-stefflhof-news .view-news-landing-page,
 .view-bildergalerien {
   position: relative;

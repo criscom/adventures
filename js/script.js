@@ -29,7 +29,24 @@
 
     // Ergebnis Detailseiten: Menüpunkt Ergebnis aktiv setzen
         $("body.node-type-ergebnisse-verein li.menu-mlid-1022 a").addClass("active-trail").addClass("active");
+    // Bildergalerie Übersichtsseite Menüpunkt "VEREIN" aktiv setzen
+        $("body.page-verein-stefflhof-bilder li.menu-772 a").addClass("active-trail").addClass("active");
+    // Bildergalerie Detailseite Menüpunkt "VEREIN" aktiv setzen
+        $("body.node-type-bildergalerie-verein li.menu-772 a").addClass("active-trail").addClass("active");
+    // News Detailseite Menüpunkt "VEREIN" aktiv setzen
+        $("body.node-type-news-stefflhof-sulmsee li.menu-772 a").addClass("active-trail").addClass("active");
 
+
+
+
+  // $(".menu-block-4").mmenu({
+  //  // options object
+  //  position: "right",
+  //   }, {
+  //  // configuration object
+  //  //pageNodetype: "section"
+  //   });
+  // $(".menu-block-4").trigger("open");
 
   });
 
