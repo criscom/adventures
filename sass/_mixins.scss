@@ -53,12 +53,17 @@
     }
   }
   @else if $canvas == M {
-    @media only screen and (max-width: $M) { // 481 - 767
+    @media only screen and (max-width: $M) { // 481 - 700
       @content;
     }
   }
-  @else if $canvas == L {
-    @media only screen and (min-width: $L) {
+  @else if $canvas == L { // 701 - 960
+    @media only screen and (max-width: $L) {
+      @content; 
+    }
+  }
+  @else if $canvas == XL { // 961 - 1160
+    @media only screen and (max-width: $XL) {
       @content; 
     }
   }

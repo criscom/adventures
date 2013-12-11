@@ -247,6 +247,13 @@ body.section-sulmsee-triathlon {
   h2 {
     padding-bottom: 22px;
     padding-bottom: 1.4rem;
+    @include MQ(L) {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 3em;
+      padding-bottom: 16px;
+      padding-bottom: 1rem;
+    }
   }
   .block-menu-block {
     margin-top: 0;
@@ -268,7 +275,7 @@ body.section-sulmsee-triathlon {
           top: -18px;
           top: -1.3rem;
           }
-      .menu__item.is-leaf, .menu__item.is-expanded {
+      .menu__item.is-leaf, .menu__item.is-expanded, .menu__item.is-collapsed {
         a:hover, a.active {
           color: $blue-top;
         }
@@ -328,6 +335,7 @@ h1, h2, h3, h4 {
 h2 {
   font-size: 28px;
   font-size: 1.75rem;
+  line-height: 1.75em;
 }
 
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon,
@@ -345,11 +353,17 @@ body.section-sulmsee-triathlon {
 nav {
   margin-top: 1em;
   margin-left: 1em;
-  ul
-  {
+  ul {
     li {
       a {
         @extend %link;
+        @include MQ(L) {
+          font-size: 18px;
+          font-size: 1.125rem;
+        }
+        @include MQ(M) {
+
+        }
         &:hover, &.active {
           color: $red-top;
         }
@@ -361,7 +375,17 @@ nav {
       font-size: 22px;
       font-size: 1.375rem;
       content: " | ";
-      padding: 0 1em;
+      padding: 0 16px;
+      padding: 0 1rem;
+      @include MQ(L) {
+          font-size: 18px;
+          font-size: 1.125rem;
+          padding: 0 8px;
+          padding: 0 .5rem;
+      }
+      @include MQ(M) {
+
+      }
     }
     li.last:after {
       content: "";
@@ -379,6 +403,56 @@ body.section-sulmsee-triathlon {
   }
 }
 
+// Responsive Menu 
+// ============================================
+
+// Main menu
+// Kicks in @695px
+
+#navigation {
+  @include MQ(M) {
+    width: 99%;
+  }
+}
+
+.responsive-menus.responsified {
+  z-index: 1;
+  position: relative;
+  span.toggler {
+    font-family: $oswald;
+    text-transform: uppercase;
+    padding: 4px 0;
+    padding: .25rem 0;
+    margin-top: 8px;
+    margin-top: .5rem;
+    background: $red-bottom;
+    box-shadow: none;
+    
+    body.section-sulmsee-triathlon & {
+    background: $blue-bottom;
+    }
+  }
+  .responsive-menus-simple {
+    box-shadow: none;
+    background: transparentize($red-bottom, .25);
+    body.section-sulmsee-triathlon & {
+    background: transparentize($blue-bottom, .25);
+    }
+    li {
+      &:after {
+        content: none;
+      }
+      a {
+        &:hover, &.active {
+          color: $orange-top;
+        body.section-sulmsee-triathlon & {  
+          color: $orange-top;
+          }
+        }
+      }
+    }
+  }
+}
 
 // labels
 
@@ -454,6 +528,13 @@ body.section-sulmsee-triathlon {
     font-size: 1.75rem;
     line-height: 36px;
     line-height: 2.25rem;
+    @include MQ(L) {
+      padding-top: 2.5%;
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 28px;
+      line-height: 1.75rem;
+    }
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -464,6 +545,9 @@ body.section-sulmsee-triathlon {
     text-align: right;
     width: 792px;
     width: 49.5rem;
+    @include MQ(L) {
+      width: 65.2138157%;
+    }
     // right: 440px;
     // right: 27.5rem;
   }
@@ -611,6 +695,12 @@ body.section-sulmsee-triathlon {
   line-height: 0;
   padding: 0;
   min-height: 208px;
+  @media only screen and (min-width: 961px) and (max-width: 67.3125em) {
+    min-height: 225px;
+  }
+  @include MQ(S) {
+    display: none;
+  }
 }
 
 // Sulmsee Triathlon Teaser
@@ -620,10 +710,18 @@ body.section-sulmsee-triathlon {
   @extend %front-teaser-385-23;
   @extend %adv-gradient-sulmsee;
   min-height: 208px;
+  @include MQ(L) {
+    width: 66.0833333%;
+    margin-right: 0;
+  }
+  @include MQ(S) {
+    width: 100%;
+  }
   h2 {
     @include hide-text;
     background: {
       image: image-url('teaser-logo-front-sulmsee-tri.png');
+      //image: image-url('stefflhof_weiss.svg');
       repeat: no-repeat;
       position: top left;
       width: 100%;
@@ -631,9 +729,19 @@ body.section-sulmsee-triathlon {
     }
     width: 356px;
     height: 74px;
+
+    @include MQ(XL) {
+      background: {
+      image: image-url('teaser-logo-front-sulmsee-tri-mq-xl.png');
+      }
+    }
+
   }
   .more-link {
     margin-top: 20px;
+    @include MQ(L) {
+      margin-top: 4px;
+    }
   }
 }
 
@@ -644,6 +752,11 @@ body.section-sulmsee-triathlon {
   margin-right: 0;
   color: white;
   @extend %adv-gradient;
+  @include MQ(L) {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
   .more-link {
     display: block;
     margin-top: 0px;
@@ -659,10 +772,20 @@ body.section-sulmsee-triathlon {
   @extend %front-teaser-385-23;
   @extend %adv-gradient-ergebnisse;
   min-height: 285px;
+  @include MQ(L) {
+    width: 100%;
+  }
 }
 
 .erg-sulm-tri {
   @extend %front-teaser-22;
+}
+
+.erg-verein, .news-teaser {
+    @include MQ(L) {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
 }
 
 // Ergebnisse Verein
@@ -1001,6 +1124,8 @@ body.section-sulmsee-triathlon {
     @extend %box-shadow-bottom;
     padding-bottom: 16px;
     padding-bottom: 1rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
     .field-collection-container {
       border-bottom: 0;
       margin-bottom: 0;

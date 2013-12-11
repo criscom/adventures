@@ -57,9 +57,9 @@
 }
 
 %adv-gradient-news {
-  background-color: $green-bottom;
-  @include filter-gradient($green-top, $green-bottom);
-  @include background(linear-gradient(top, $green-top, $green-bottom));
+  background-color: $violet-bottom;
+  @include filter-gradient($violet-top, $violet-bottom);
+  @include background(linear-gradient(top, $violet-top, $violet-bottom));
 }
 
 %header-content {
