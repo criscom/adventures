@@ -36,30 +36,36 @@
   background-color: $red-bottom;
   @include filter-gradient($red-top, $red-bottom);
   @include background(linear-gradient(top, $red-top, $red-bottom));
+  background: -ms-linear-gradient(top, $red-top, $red-bottom);
+
 }
 
 %adv-gradient-sulmsee {
   background-color: $blue-bottom;
   @include filter-gradient($blue-top, $blue-bottom);
   @include background(linear-gradient(top, $blue-top, $blue-bottom));
+  background: -ms-linear-gradient(top, $blue-top, $blue-bottom);
 }
 
 %flex-content-gradient {
   background-color: $grey-bottom;
   @include filter-gradient($grey-top, $grey-bottom);
   @include background(linear-gradient(top, $grey-top, $grey-bottom));
+  background: -ms-linear-gradient(top, $grey-top, $grey-bottom);
 }
 
 %adv-gradient-ergebnisse {
-    background-color: $orange-bottom;
+  background-color: $orange-bottom;
   @include filter-gradient($orange-top, $orange-bottom);
   @include background(linear-gradient(top, $orange-top, $orange-bottom));
+  background: -ms-linear-gradient(top, $orange-top, $orange-bottom);
 }
 
 %adv-gradient-news {
   background-color: $violet-bottom;
   @include filter-gradient($violet-top, $violet-bottom);
   @include background(linear-gradient(top, $violet-top, $violet-bottom));
+  background: -ms-linear-gradient(top, $violet-top, $violet-bottom);
 }
 
 %header-content {

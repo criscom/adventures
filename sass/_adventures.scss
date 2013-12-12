@@ -43,6 +43,9 @@ body {
 #footer {
   padding-right: .657894736%; // 8 / 1216
   padding-left: .657894736%;
+  @include MQ(S) {
+
+  }
 }
 
 .region-sidebar-second {
@@ -320,10 +323,14 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 .header__region {
-  @include MQ(L) {
-    clear: none;
+      clear: none;
     float: right;
-    margin-right: 12.5%; // 150 / 1200
+    margin-right: 14%; // 150 / 1200
+  @include MQ(L) {
+    margin-right: 0;
+  }
+  @media only screen and (max-width: 724px) { // hides address in header on smaller devices
+    display: none;
   }
   font-size: 14px;
   font-size: .875rem;
@@ -491,6 +498,17 @@ body.section-sulmsee-triathlon {
 #slideshow {
   margin-top: -40px;
   margin-top: -2.5rem;
+  @include MQ(S) {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+  }
+    // margin-top: 20px;
+    // margin-top: 1.25rem;
+
+  .ie & {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+  }
   .region-highlighted .block {
       &:after {
         @extend %clearfix;
@@ -566,6 +584,14 @@ body.section-sulmsee-triathlon {
       line-height: 22px;
       line-height: 1.375rem;
     }
+    @include MQ(S) {
+      padding-top: 1%;
+      font-size: 8px;
+      font-size: .5rem;
+      line-height: 12px;
+      line-height: .75rem;
+    }
+
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -727,7 +753,7 @@ body.section-sulmsee-triathlon {
   // width: 27.22039474%;
   width: 33.91666667%; // 407/1200 = 33.91666667
   @extend %adv-gradient-sulmsee;
-  line-height: 0;
+  line-height: 1;
   padding: 0;
   min-height: 208px;
   @media only screen and (min-width: 961px) and (max-width: 67.3125em) {

@@ -12,8 +12,8 @@ environment = :development
 #environment = :production
 
 # In development, we can turn on the FireSass-compatible debug_info.
-firesass = false
-#firesass = true
+#firesass = false
+firesass = true
 
 
 # Location of the theme's resources.
@@ -53,4 +53,4 @@ relative_assets = true
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.
-sass_options = (environment == :development && firesass == true) ? {:debug_info => true} : {}
+sass_options = (environment == :development && firesass == true) ? {:debug_info => false} : {}

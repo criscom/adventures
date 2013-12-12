@@ -58,9 +58,10 @@ header, .adventures-teaser, footer p {
   background: -o-linear-gradient(top, #e7501f, #aa1a1a);
   -pie-background: linear-gradient(top, #e7501f, #aa1a1a);
   background: linear-gradient(top, #e7501f, #aa1a1a);
+  background: -ms-linear-gradient(top, #e7501f, #aa1a1a);
 }
 
-/* line 41, ../sass/_placeholders.scss */
+/* line 43, ../sass/_placeholders.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon header,
 body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .section-sulmsee-triathlon footer p {
   background-color: #0069b4;
@@ -71,9 +72,10 @@ body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .sectio
   background: -o-linear-gradient(top, #009fe3, #0069b4);
   -pie-background: linear-gradient(top, #009fe3, #0069b4);
   background: linear-gradient(top, #009fe3, #0069b4);
+  background: -ms-linear-gradient(top, #009fe3, #0069b4);
 }
 
-/* line 47, ../sass/_placeholders.scss */
+/* line 50, ../sass/_placeholders.scss */
 .slides li {
   background-color: #979392;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE3E2E3', endColorstr='#FF979392');
@@ -83,9 +85,10 @@ body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .sectio
   background: -o-linear-gradient(top, #e3e2e3, #979392);
   -pie-background: linear-gradient(top, #e3e2e3, #979392);
   background: linear-gradient(top, #e3e2e3, #979392);
+  background: -ms-linear-gradient(top, #e3e2e3, #979392);
 }
 
-/* line 53, ../sass/_placeholders.scss */
+/* line 57, ../sass/_placeholders.scss */
 .erg-sulm-tri, .erg-verein, .news-teaser {
   background-color: #c36017;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFCDD00', endColorstr='#FFC36017');
@@ -95,9 +98,10 @@ body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .sectio
   background: -o-linear-gradient(top, #fcdd00, #c36017);
   -pie-background: linear-gradient(top, #fcdd00, #c36017);
   background: linear-gradient(top, #fcdd00, #c36017);
+  background: -ms-linear-gradient(top, #fcdd00, #c36017);
 }
 
-/* line 59, ../sass/_placeholders.scss */
+/* line 64, ../sass/_placeholders.scss */
 .news-teaser, #block-views-news-landing-page-block-2 .block-wrapper {
   background-color: #894a95;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCC8ABB', endColorstr='#FF894A95');
@@ -107,9 +111,10 @@ body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .sectio
   background: -o-linear-gradient(top, #cc8abb, #894a95);
   -pie-background: linear-gradient(top, #cc8abb, #894a95);
   background: linear-gradient(top, #cc8abb, #894a95);
+  background: -ms-linear-gradient(top, #cc8abb, #894a95);
 }
 
-/* line 65, ../sass/_placeholders.scss */
+/* line 71, ../sass/_placeholders.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-title a, .fc-header, .node-news-stefflhof-sulmsee .group-left h2,
 .view-mode-bildergalerie_landing_page .group-left h2 {
   color: #e7501f;
@@ -119,7 +124,7 @@ body.section-sulmsee-triathlon header, .image-teaser, .triathlon-teaser, .sectio
   text-transform: uppercase;
 }
 
-/* line 73, ../sass/_placeholders.scss */
+/* line 79, ../sass/_placeholders.scss */
 .block-menu-block ul .menu__item.is-leaf a, .block-menu-block ul .menu__item.is-collapsed a, .block-menu-block ul .menu__item.is-expanded a, nav ul li a, .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten
 ul li a {
   font-family: OswaldBook, Helvetica, Arial, sans-serif;
@@ -130,7 +135,7 @@ ul li a {
   text-transform: uppercase;
 }
 
-/* line 84, ../sass/_placeholders.scss */
+/* line 90, ../sass/_placeholders.scss */
 .flexslider, #verein-landing-page .panel-flexible-inside {
   position: relative;
   border: none;
@@ -140,13 +145,13 @@ ul li a {
   behavior: url("/sites/all/themes/adventures/PIE/PIE.php");
   border-radius: none !important;
 }
-/* line 90, ../sass/_placeholders.scss */
+/* line 96, ../sass/_placeholders.scss */
 .flexslider:before, #verein-landing-page .panel-flexible-inside:before, .flexslider:after, #verein-landing-page .panel-flexible-inside:after {
   content: " ";
   position: absolute;
   z-index: -2;
 }
-/* line 96, ../sass/_placeholders.scss */
+/* line 102, ../sass/_placeholders.scss */
 .flexslider:before, #verein-landing-page .panel-flexible-inside:before {
   top: 0;
   bottom: 0;
@@ -160,7 +165,7 @@ ul li a {
   border-radius: 100px / 10px;
 }
 
-/* line 111, ../sass/_placeholders.scss */
+/* line 117, ../sass/_placeholders.scss */
 .block-menu-block, #block-views-news-landing-page-block-2, .not-front .view-ergebnisse-verein .views-row, .page-sulmsee-triathlon-news .view-news-landing-page .view-content .views-row,
 .page-verein-stefflhof-news .view-news-landing-page .view-content .views-row,
 .view-bildergalerien .view-content .views-row, .not-front .panel-pane .ds-1col, .not-front .panel-pane .weather {
@@ -173,7 +178,7 @@ ul li a {
   behavior: url("/sites/all/themes/adventures/PIE/PIE.php");
   border-radius: none !important;
 }
-/* line 118, ../sass/_placeholders.scss */
+/* line 124, ../sass/_placeholders.scss */
 .block-menu-block:before, #block-views-news-landing-page-block-2:before, .not-front .view-ergebnisse-verein .views-row:before, .page-sulmsee-triathlon-news .view-news-landing-page .view-content .views-row:before,
 .page-verein-stefflhof-news .view-news-landing-page .view-content .views-row:before,
 .view-bildergalerien .view-content .views-row:before, .not-front .panel-pane .ds-1col:before, .not-front .panel-pane .weather:before, .block-menu-block:after, #block-views-news-landing-page-block-2:after, .not-front .view-ergebnisse-verein .views-row:after, .page-sulmsee-triathlon-news .view-news-landing-page .view-content .views-row:after,
@@ -183,7 +188,7 @@ ul li a {
   position: absolute;
   z-index: -2;
 }
-/* line 123, ../sass/_placeholders.scss */
+/* line 129, ../sass/_placeholders.scss */
 .block-menu-block:before, #block-views-news-landing-page-block-2:before, .not-front .view-ergebnisse-verein .views-row:before, .page-sulmsee-triathlon-news .view-news-landing-page .view-content .views-row:before,
 .page-verein-stefflhof-news .view-news-landing-page .view-content .views-row:before,
 .view-bildergalerien .view-content .views-row:before, .not-front .panel-pane .ds-1col:before, .not-front .panel-pane .weather:before {
@@ -200,7 +205,7 @@ ul li a {
   border-radius: 100px / 10px;
 }
 
-/* line 166, ../sass/_placeholders.scss */
+/* line 172, ../sass/_placeholders.scss */
 .text-teaser h2, #block-views-news-landing-page-block-2 h2, #block-views-news-landing-page-block-2 h3, #block-views-news-landing-page-block-2 p {
   margin-top: 6px;
   margin-top: .375rem;
@@ -244,13 +249,13 @@ ul li a {
   font-style: normal;
 }
 
-/* line 42, ../sass/_einstern.scss */
+/* line 48, ../sass/_einstern.scss */
 input, select, img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 47, ../sass/_einstern.scss */
+/* line 53, ../sass/_einstern.scss */
 iframe {
   max-width: 100%;
 }
@@ -2075,18 +2080,18 @@ body html {
   padding-left: .657894736%;
 }
 
-/* line 48, ../sass/_adventures.scss */
+/* line 51, ../sass/_adventures.scss */
 .region-sidebar-second {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 53, ../sass/_adventures.scss */
+/* line 56, ../sass/_adventures.scss */
 #main, footer {
   background-color: #fff;
 }
 
-/* line 81, ../sass/_adventures.scss */
+/* line 84, ../sass/_adventures.scss */
 [role="main"] p,
 [role="main"] li,
 [role="main"] li a,
@@ -2098,17 +2103,17 @@ body html {
   font-size: 14px;
   font-size: .875rem;
 }
-/* line 86, ../sass/_adventures.scss */
+/* line 89, ../sass/_adventures.scss */
 [role="main"] li a, [role="main"] p a, [role="main"] span a, [role="main"] .download-file a, [role="main"] a:not(.tabs-primary__tab-link) {
   color: #e7501f;
   text-decoration: none;
 }
-/* line 89, ../sass/_adventures.scss */
+/* line 92, ../sass/_adventures.scss */
 [role="main"] li a:hover, [role="main"] p a:hover, [role="main"] span a:hover, [role="main"] .download-file a:hover, [role="main"] a:not(.tabs-primary__tab-link):hover {
   color: #aa1a1a;
 }
 
-/* line 95, ../sass/_adventures.scss */
+/* line 98, ../sass/_adventures.scss */
 .result a {
   background: transparent url('../images/icon-stoppwatch.png?1383735710') left center no-repeat;
   display: block;
@@ -2119,7 +2124,7 @@ body html {
   line-height: 1.25em;
 }
 
-/* line 110, ../sass/_adventures.scss */
+/* line 113, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] li a, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] p a, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] span a, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] .download-file a, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] a:not(.tabs-primary__tab-link),
 body.section-sulmsee-triathlon [role="main"] li a,
 body.section-sulmsee-triathlon [role="main"] p a,
@@ -2129,7 +2134,7 @@ body.section-sulmsee-triathlon [role="main"] a:not(.tabs-primary__tab-link) {
   color: #009fe3;
   text-decoration: none;
 }
-/* line 113, ../sass/_adventures.scss */
+/* line 116, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] li a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] p a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] span a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] .download-file a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon [role="main"] a:not(.tabs-primary__tab-link):hover,
 body.section-sulmsee-triathlon [role="main"] li a:hover,
 body.section-sulmsee-triathlon [role="main"] p a:hover,
@@ -2139,48 +2144,48 @@ body.section-sulmsee-triathlon [role="main"] a:not(.tabs-primary__tab-link):hove
   color: #0069b4;
 }
 
-/* line 129, ../sass/_adventures.scss */
+/* line 132, ../sass/_adventures.scss */
 #content {
   position: relative;
   padding-left: 1.5833333333% !important;
   padding-right: 0 !important;
 }
 
-/* line 135, ../sass/_adventures.scss */
+/* line 138, ../sass/_adventures.scss */
 .front #content {
   padding-left: 0 !important;
 }
 
-/* line 144, ../sass/_adventures.scss */
+/* line 147, ../sass/_adventures.scss */
 #content .node > .group-left {
   width: 67.31583404%;
   padding-right: 1.778154107%;
 }
-/* line 148, ../sass/_adventures.scss */
+/* line 151, ../sass/_adventures.scss */
 #content .node > .group-right {
   width: 32.68416596%;
 }
 
-/* line 155, ../sass/_adventures.scss */
+/* line 158, ../sass/_adventures.scss */
 .sidebar-second #content {
   width: 67.83333333%;
   margin-right: -67.83333333%;
 }
 @media only screen and (max-width: 44.25em) {
-  /* line 155, ../sass/_adventures.scss */
+  /* line 158, ../sass/_adventures.scss */
   .sidebar-second #content {
     width: 100%;
     margin-right: 0;
   }
 }
 
-/* line 164, ../sass/_adventures.scss */
+/* line 167, ../sass/_adventures.scss */
 .sidebar-second .region-sidebar-second {
   width: 32.16666667%;
   margin-left: 67.83333333%;
 }
 @media only screen and (max-width: 44.25em) {
-  /* line 164, ../sass/_adventures.scss */
+  /* line 167, ../sass/_adventures.scss */
   .sidebar-second .region-sidebar-second {
     clear: left;
     width: 100%;
@@ -2188,84 +2193,84 @@ body.section-sulmsee-triathlon [role="main"] a:not(.tabs-primary__tab-link):hove
   }
 }
 
-/* line 178, ../sass/_adventures.scss */
+/* line 181, ../sass/_adventures.scss */
 .sidebar-second #content .ds-2col-fluid > .group-left {
   width: 33.4591195%;
   padding-right: 0;
 }
 
-/* line 183, ../sass/_adventures.scss */
+/* line 186, ../sass/_adventures.scss */
 .sidebar-second #content .ds-2col-fluid > .group-right {
   width: 66.5408805%;
   padding-left: 3.396226415%;
   padding-right: 2.641509434%;
 }
 
-/* line 195, ../sass/_adventures.scss */
+/* line 198, ../sass/_adventures.scss */
 .sidebar-second #content .ds-1col,
 .sidebar-second #content .view {
   margin-right: 24px;
   margin-right: 1.5rem;
 }
 
-/* line 205, ../sass/_adventures.scss */
+/* line 208, ../sass/_adventures.scss */
 .region-sidebar-second {
   position: relative;
   z-index: 1;
 }
 
-/* line 210, ../sass/_adventures.scss */
+/* line 213, ../sass/_adventures.scss */
 .block-menu-block {
   padding-bottom: 8px;
   margin-top: 29px;
   margin-top: 1.8rem;
 }
-/* line 215, ../sass/_adventures.scss */
+/* line 218, ../sass/_adventures.scss */
 .block-menu-block .block-wrapper {
   background: #d9d9d9;
   padding-bottom: 1px;
 }
-/* line 219, ../sass/_adventures.scss */
+/* line 222, ../sass/_adventures.scss */
 .block-menu-block h2 {
   padding-left: 32px;
   padding-left: 2rem;
 }
-/* line 225, ../sass/_adventures.scss */
+/* line 228, ../sass/_adventures.scss */
 .block-menu-block ul {
   padding-left: 32px;
   padding-left: 2rem !important;
 }
-/* line 228, ../sass/_adventures.scss */
+/* line 231, ../sass/_adventures.scss */
 .block-menu-block ul .menu__item.is-leaf, .block-menu-block ul .menu__item.is-collapsed, .block-menu-block ul .menu__item.is-expanded {
   list-style-image: none;
   list-style-type: none;
 }
-/* line 231, ../sass/_adventures.scss */
+/* line 234, ../sass/_adventures.scss */
 .block-menu-block ul .menu__item.is-leaf a, .block-menu-block ul .menu__item.is-collapsed a, .block-menu-block ul .menu__item.is-expanded a {
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 235, ../sass/_adventures.scss */
+/* line 238, ../sass/_adventures.scss */
 .block-menu-block ul .menu__item.is-leaf a:hover, .block-menu-block ul .menu__item.is-leaf a.active, .block-menu-block ul .menu__item.is-collapsed a:hover, .block-menu-block ul .menu__item.is-collapsed a.active, .block-menu-block ul .menu__item.is-expanded a:hover, .block-menu-block ul .menu__item.is-expanded a.active {
   color: #e7501f;
 }
 
-/* line 244, ../sass/_adventures.scss */
+/* line 247, ../sass/_adventures.scss */
 #block-menu-block-1, #block-menu-block-2, #block-menu-block-5 {
   margin-top: 0;
 }
 
-/* line 249, ../sass/_adventures.scss */
+/* line 252, ../sass/_adventures.scss */
 #block-menu-block-4 {
   margin-top: 40px;
   margin-top: 2.5rem;
 }
-/* line 252, ../sass/_adventures.scss */
+/* line 255, ../sass/_adventures.scss */
 #block-menu-block-4 .menu-block-wrapper, #block-menu-block-4 h2 {
   background: #d9d9d9;
   padding-bottom: 1px;
 }
-/* line 256, ../sass/_adventures.scss */
+/* line 259, ../sass/_adventures.scss */
 #block-menu-block-4 h2 {
   padding-top: 13px;
   padding-top: .8rem;
@@ -2273,7 +2278,7 @@ body.section-sulmsee-triathlon [role="main"] a:not(.tabs-primary__tab-link):hove
   padding-bottom: 1.4rem;
 }
 @media only screen and (max-width: 60em) {
-  /* line 256, ../sass/_adventures.scss */
+  /* line 259, ../sass/_adventures.scss */
   #block-menu-block-4 h2 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -2282,21 +2287,21 @@ body.section-sulmsee-triathlon [role="main"] a:not(.tabs-primary__tab-link):hove
     padding-bottom: 1rem;
   }
 }
-/* line 269, ../sass/_adventures.scss */
+/* line 272, ../sass/_adventures.scss */
 #block-menu-block-4 .block-menu-block {
   margin-top: 0;
 }
-/* line 271, ../sass/_adventures.scss */
+/* line 274, ../sass/_adventures.scss */
 #block-menu-block-4 .block-menu-block ul.menu {
   margin-top: 0;
 }
 
-/* line 279, ../sass/_adventures.scss */
+/* line 282, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block,
 body.section-sulmsee-triathlon .block-menu-block {
   position: relative;
 }
-/* line 281, ../sass/_adventures.scss */
+/* line 284, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu-icons,
 body.section-sulmsee-triathlon .block-menu-block .menu-icons {
   background: url('../images/menu-icons.png?1384855872') 2em 0 no-repeat;
@@ -2306,7 +2311,7 @@ body.section-sulmsee-triathlon .block-menu-block .menu-icons {
   top: -18px;
   top: -1.3rem;
 }
-/* line 290, ../sass/_adventures.scss */
+/* line 293, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-leaf a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-leaf a.active, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-expanded a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-expanded a.active, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-collapsed a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon .block-menu-block .menu__item.is-collapsed a.active,
 body.section-sulmsee-triathlon .block-menu-block .menu__item.is-leaf a:hover,
 body.section-sulmsee-triathlon .block-menu-block .menu__item.is-leaf a.active,
@@ -2317,54 +2322,61 @@ body.section-sulmsee-triathlon .block-menu-block .menu__item.is-collapsed a.acti
   color: #009fe3;
 }
 
-/* line 322, ../sass/_adventures.scss */
+/* line 325, ../sass/_adventures.scss */
 .header__region {
+  clear: none;
+  float: right;
+  margin-right: 14%;
   font-size: 14px;
   font-size: .875rem;
   color: white;
   font-family: OswaldLight, Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-width: 60em) {
-  /* line 322, ../sass/_adventures.scss */
+  /* line 325, ../sass/_adventures.scss */
   .header__region {
-    clear: none;
-    float: right;
-    margin-right: 12.5%;
+    margin-right: 0;
   }
 }
-/* line 332, ../sass/_adventures.scss */
+@media only screen and (max-width: 724px) {
+  /* line 325, ../sass/_adventures.scss */
+  .header__region {
+    display: none;
+  }
+}
+/* line 339, ../sass/_adventures.scss */
 .header__region .block, .header__region p {
   margin-top: .15em;
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 32.5em) {
-  /* line 338, ../sass/_adventures.scss */
+  /* line 345, ../sass/_adventures.scss */
   .header__logo-image {
     width: 300px !important;
   }
 }
 
-/* line 346, ../sass/_adventures.scss */
+/* line 353, ../sass/_adventures.scss */
 h1, h2, h3, h4 {
   font-family: OswaldBook, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #e7501f;
 }
 
-/* line 352, ../sass/_adventures.scss */
+/* line 359, ../sass/_adventures.scss */
 h2 {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.75em;
 }
 
-/* line 358, ../sass/_adventures.scss */
+/* line 365, ../sass/_adventures.scss */
 #content h2 {
   margin-top: 0;
 }
 
-/* line 364, ../sass/_adventures.scss */
+/* line 371, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon h1, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon h2, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon h3, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon h4,
 body.section-sulmsee-triathlon h1,
 body.section-sulmsee-triathlon h2,
@@ -2373,23 +2385,23 @@ body.section-sulmsee-triathlon h4 {
   color: #009fe3;
 }
 
-/* line 374, ../sass/_adventures.scss */
+/* line 381, ../sass/_adventures.scss */
 nav {
   margin-top: 1em;
   margin-left: 1em;
 }
 @media only screen and (max-width: 60em) {
-  /* line 379, ../sass/_adventures.scss */
+  /* line 386, ../sass/_adventures.scss */
   nav ul li a {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
-/* line 388, ../sass/_adventures.scss */
+/* line 395, ../sass/_adventures.scss */
 nav ul li a:hover, nav ul li a.active {
   color: #e7501f;
 }
-/* line 393, ../sass/_adventures.scss */
+/* line 400, ../sass/_adventures.scss */
 nav ul li:after {
   color: #999999;
   font-family: OswaldBook, Helvetica, Arial, sans-serif;
@@ -2400,7 +2412,7 @@ nav ul li:after {
   padding: 0 1rem;
 }
 @media only screen and (max-width: 60em) {
-  /* line 393, ../sass/_adventures.scss */
+  /* line 400, ../sass/_adventures.scss */
   nav ul li:after {
     font-size: 18px;
     font-size: 1.125rem;
@@ -2408,13 +2420,13 @@ nav ul li:after {
     padding: 0 .5rem;
   }
 }
-/* line 411, ../sass/_adventures.scss */
+/* line 418, ../sass/_adventures.scss */
 nav ul li.last:after {
   content: "";
   padding: 0;
 }
 
-/* line 421, ../sass/_adventures.scss */
+/* line 428, ../sass/_adventures.scss */
 body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon nav li a:hover, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon nav li a.active, body.node-type-news-stefflhof-sulmsee.section-sulmsee-triahtlon nav li a.active-trail,
 body.section-sulmsee-triathlon nav li a:hover,
 body.section-sulmsee-triathlon nav li a.active,
@@ -2423,18 +2435,18 @@ body.section-sulmsee-triathlon nav li a.active-trail {
 }
 
 @media only screen and (max-width: 44.25em) {
-  /* line 433, ../sass/_adventures.scss */
+  /* line 440, ../sass/_adventures.scss */
   #navigation {
     width: 99%;
   }
 }
 
-/* line 439, ../sass/_adventures.scss */
+/* line 446, ../sass/_adventures.scss */
 .responsive-menus.responsified {
   z-index: 1;
   position: relative;
 }
-/* line 442, ../sass/_adventures.scss */
+/* line 449, ../sass/_adventures.scss */
 .responsive-menus.responsified span.toggler {
   font-family: OswaldLight, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -2445,67 +2457,79 @@ body.section-sulmsee-triathlon nav li a.active-trail {
   background: #aa1a1a;
   box-shadow: none;
 }
-/* line 452, ../sass/_adventures.scss */
+/* line 459, ../sass/_adventures.scss */
 body.section-sulmsee-triathlon .responsive-menus.responsified span.toggler {
   background: #0069b4;
 }
-/* line 456, ../sass/_adventures.scss */
+/* line 463, ../sass/_adventures.scss */
 .responsive-menus.responsified .responsive-menus-simple {
   box-shadow: none;
   background: rgba(170, 26, 26, 0.75);
 }
-/* line 459, ../sass/_adventures.scss */
+/* line 466, ../sass/_adventures.scss */
 body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-simple {
   background: rgba(0, 105, 180, 0.75);
 }
-/* line 463, ../sass/_adventures.scss */
+/* line 470, ../sass/_adventures.scss */
 .responsive-menus.responsified .responsive-menus-simple li:after {
   content: none;
 }
-/* line 467, ../sass/_adventures.scss */
+/* line 474, ../sass/_adventures.scss */
 .responsive-menus.responsified .responsive-menus-simple li a:hover, .responsive-menus.responsified .responsive-menus-simple li a.active {
   color: #fcdd00;
 }
-/* line 469, ../sass/_adventures.scss */
+/* line 476, ../sass/_adventures.scss */
 body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-simple li a:hover, body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-simple li a.active {
   color: #fcdd00;
 }
 
-/* line 480, ../sass/_adventures.scss */
+/* line 487, ../sass/_adventures.scss */
 .label {
   font-weight: bold;
 }
 
-/* line 484, ../sass/_adventures.scss */
+/* line 491, ../sass/_adventures.scss */
 .label-blank {
   font-weight: normal;
 }
 
-/* line 491, ../sass/_adventures.scss */
+/* line 498, ../sass/_adventures.scss */
 #slideshow {
   margin-top: -40px;
   margin-top: -2.5rem;
 }
+@media only screen and (max-width: 30em) {
+  /* line 498, ../sass/_adventures.scss */
+  #slideshow {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+  }
+}
+/* line 508, ../sass/_adventures.scss */
+.ie #slideshow {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
 
-/* line 502, ../sass/_adventures.scss */
+/* line 520, ../sass/_adventures.scss */
 .view-content {
   position: relative;
   z-index: 1;
 }
 
-/* line 512, ../sass/_adventures.scss */
+/* line 530, ../sass/_adventures.scss */
 .slides li {
   margin: 12px 0;
   margin: .75rem 0;
 }
 @media only screen and (max-width: 32.5em) {
-  /* line 512, ../sass/_adventures.scss */
+  /* line 530, ../sass/_adventures.scss */
   .slides li {
     margin-bottom: 12px;
   }
 }
 
-/* line 521, ../sass/_adventures.scss */
+/* line 539, ../sass/_adventures.scss */
 .views-field-field-bild-slideshow .field-content {
   z-index: 10;
   max-width: 68%;
@@ -2514,7 +2538,7 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   background: #FFF;
   float: left;
 }
-/* line 532, ../sass/_adventures.scss */
+/* line 550, ../sass/_adventures.scss */
 .views-field-field-bild-slideshow .field-content img {
   max-width: 100%;
   width: 100%;
@@ -2523,7 +2547,7 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   padding: 0;
 }
 
-/* line 540, ../sass/_adventures.scss */
+/* line 558, ../sass/_adventures.scss */
 .views-field-body .field-content {
   float: right;
   width: 31.166666667%;
@@ -2541,7 +2565,7 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   text-transform: uppercase;
 }
 @media only screen and (max-width: 60em) {
-  /* line 540, ../sass/_adventures.scss */
+  /* line 558, ../sass/_adventures.scss */
   .views-field-body .field-content {
     padding-top: 2.5%;
     font-size: 18px;
@@ -2551,7 +2575,7 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   }
 }
 @media only screen and (max-width: 32.5em) {
-  /* line 540, ../sass/_adventures.scss */
+  /* line 558, ../sass/_adventures.scss */
   .views-field-body .field-content {
     padding-top: 1%;
     font-size: 14px;
@@ -2560,21 +2584,31 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
     line-height: 1.375rem;
   }
 }
+@media only screen and (max-width: 30em) {
+  /* line 558, ../sass/_adventures.scss */
+  .views-field-body .field-content {
+    padding-top: 1%;
+    font-size: 8px;
+    font-size: .5rem;
+    line-height: 12px;
+    line-height: .75rem;
+  }
+}
 
-/* line 575, ../sass/_adventures.scss */
+/* line 601, ../sass/_adventures.scss */
 .flex-control-nav {
   text-align: right;
   width: 792px;
   width: 49.5rem;
 }
 @media only screen and (max-width: 60em) {
-  /* line 575, ../sass/_adventures.scss */
+  /* line 601, ../sass/_adventures.scss */
   .flex-control-nav {
     width: 65.2138157%;
   }
 }
 
-/* line 586, ../sass/_adventures.scss */
+/* line 612, ../sass/_adventures.scss */
 .flex-control-paging li a {
   font-size: 20px;
   font-size: 1.25rem;
@@ -2584,128 +2618,128 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   box-shadow: none;
 }
 @media only screen and (max-width: 32.5em) {
-  /* line 586, ../sass/_adventures.scss */
+  /* line 612, ../sass/_adventures.scss */
   .flex-control-paging li a {
     font-size: 14px;
     font-size: .875rem;
   }
 }
-/* line 597, ../sass/_adventures.scss */
+/* line 623, ../sass/_adventures.scss */
 .flex-control-paging li a.flex-active {
   background: none;
   color: #e7501f;
 }
-/* line 601, ../sass/_adventures.scss */
+/* line 627, ../sass/_adventures.scss */
 .flex-control-paging li a:hover {
   background: none;
   color: #e7501f;
 }
-/* line 606, ../sass/_adventures.scss */
+/* line 632, ../sass/_adventures.scss */
 .section-sulmsee-triathlon .flex-control-paging li a.flex-active {
   background: none;
   color: #009fe3;
 }
-/* line 610, ../sass/_adventures.scss */
+/* line 636, ../sass/_adventures.scss */
 .section-sulmsee-triathlon .flex-control-paging li a:hover {
   background: none;
   color: #009fe3;
 }
 
-/* line 618, ../sass/_adventures.scss */
+/* line 644, ../sass/_adventures.scss */
 .flex-direction-nav a {
   padding: 10px 0;
 }
 
-/* line 626, ../sass/_adventures.scss */
+/* line 652, ../sass/_adventures.scss */
 #verein-landing-page {
   position: relative;
   z-index: 1;
 }
 
-/* line 634, ../sass/_adventures.scss */
+/* line 660, ../sass/_adventures.scss */
 .panels-flexible-region-inside {
   padding: 0;
 }
 
-/* line 638, ../sass/_adventures.scss */
+/* line 664, ../sass/_adventures.scss */
 .panels-flexible-row {
   z-index: 5;
   background: #FFF;
   padding-bottom: 22px;
   padding-bottom: 1.375rem;
 }
-/* line 643, ../sass/_adventures.scss */
+/* line 669, ../sass/_adventures.scss */
 .panels-flexible-row .panels-flexible-row-inside-first {
   padding-top: 22px;
   margin-top: 1.375rem;
 }
 
-/* line 649, ../sass/_adventures.scss */
+/* line 675, ../sass/_adventures.scss */
 .panels-flexible-row-1-1 {
   margin-top: 0;
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
 
-/* line 655, ../sass/_adventures.scss */
+/* line 681, ../sass/_adventures.scss */
 .front-teaser {
   min-height: 205px;
 }
 
-/* line 661, ../sass/_adventures.scss */
+/* line 687, ../sass/_adventures.scss */
 .text-teaser {
   padding: 0 12px;
   padding: 0 .75rem;
 }
-/* line 668, ../sass/_adventures.scss */
+/* line 694, ../sass/_adventures.scss */
 .text-teaser h3, .text-teaser h4, .text-teaser h2.pane-title, .text-teaser a.more-link, .text-teaser p, .text-teaser h3 a,
 .text-teaser .field-name-field-name-des-athleten a,
 .text-teaser .field-content a,
 .text-teaser .weiter a {
   color: white !important;
 }
-/* line 671, ../sass/_adventures.scss */
+/* line 697, ../sass/_adventures.scss */
 .text-teaser h3, .text-teaser h3 a, .text-teaser h4, .text-teaser h2.pane-title {
   letter-spacing: 0.0625em;
 }
-/* line 674, ../sass/_adventures.scss */
+/* line 700, ../sass/_adventures.scss */
 .text-teaser .field-name-field-name-des-athleten a {
   font-size: 14px;
   font-size: .875rem;
   text-transform: uppercase;
 }
-/* line 684, ../sass/_adventures.scss */
+/* line 710, ../sass/_adventures.scss */
 .text-teaser a.more-link,
 .text-teaser .field-name-field-name-des-athleten a,
 .text-teaser .field-content a,
 .text-teaser .weiter a {
   font-weight: bold;
 }
-/* line 687, ../sass/_adventures.scss */
+/* line 713, ../sass/_adventures.scss */
 .text-teaser a.more-link:hover,
 .text-teaser .field-name-field-name-des-athleten a:hover,
 .text-teaser .field-content a:hover,
 .text-teaser .weiter a:hover {
   color: #e7501f !important;
 }
-/* line 694, ../sass/_adventures.scss */
+/* line 720, ../sass/_adventures.scss */
 .text-teaser h3 {
   margin-top: 8px;
   margin-top: .5rem;
   margin-bottom: 0;
 }
-/* line 699, ../sass/_adventures.scss */
+/* line 725, ../sass/_adventures.scss */
 .text-teaser h4 {
   margin-top: 0;
   margin-bottom: 2px;
   margin-bottom: .15rem;
 }
-/* line 704, ../sass/_adventures.scss */
+/* line 730, ../sass/_adventures.scss */
 .text-teaser p {
   margin-top: 0;
   margin-bottom: 1px;
 }
-/* line 714, ../sass/_adventures.scss */
+/* line 740, ../sass/_adventures.scss */
 .text-teaser p,
 .text-teaser a.more-link,
 .text-teaser .entity-field-collection-item .field,
@@ -2716,51 +2750,51 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   font-size: .75rem;
 }
 
-/* line 726, ../sass/_adventures.scss */
+/* line 752, ../sass/_adventures.scss */
 .image-teaser {
   width: 33.91666667%;
-  line-height: 0;
+  line-height: 1;
   padding: 0;
   min-height: 208px;
 }
 @media only screen and (min-width: 961px) and (max-width: 67.3125em) {
-  /* line 726, ../sass/_adventures.scss */
+  /* line 752, ../sass/_adventures.scss */
   .image-teaser {
     min-height: 225px;
   }
 }
 @media only screen and (max-width: 32.5em) {
-  /* line 726, ../sass/_adventures.scss */
+  /* line 752, ../sass/_adventures.scss */
   .image-teaser {
     min-height: 209px;
   }
 }
 @media only screen and (max-width: 30em) {
-  /* line 726, ../sass/_adventures.scss */
+  /* line 752, ../sass/_adventures.scss */
   .image-teaser {
     display: none;
   }
 }
 
-/* line 746, ../sass/_adventures.scss */
+/* line 772, ../sass/_adventures.scss */
 .triathlon-teaser {
   color: white;
   min-height: 208px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 746, ../sass/_adventures.scss */
+  /* line 772, ../sass/_adventures.scss */
   .triathlon-teaser {
     width: 66.0833333%;
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 30em) {
-  /* line 746, ../sass/_adventures.scss */
+  /* line 772, ../sass/_adventures.scss */
   .triathlon-teaser {
     width: 100%;
   }
 }
-/* line 758, ../sass/_adventures.scss */
+/* line 784, ../sass/_adventures.scss */
 .triathlon-teaser h2 {
   border: 0;
   font: 0/0 a;
@@ -2776,77 +2810,77 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   height: 74px;
 }
 @media only screen and (max-width: 72.5em) {
-  /* line 758, ../sass/_adventures.scss */
+  /* line 784, ../sass/_adventures.scss */
   .triathlon-teaser h2 {
     background-image: url('../images/teaser-logo-front-sulmsee-tri-mq-xl.png?1386680514');
   }
 }
-/* line 778, ../sass/_adventures.scss */
+/* line 804, ../sass/_adventures.scss */
 .triathlon-teaser .more-link {
   margin-top: 20px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 778, ../sass/_adventures.scss */
+  /* line 804, ../sass/_adventures.scss */
   .triathlon-teaser .more-link {
     margin-top: 4px;
   }
 }
 
-/* line 788, ../sass/_adventures.scss */
+/* line 814, ../sass/_adventures.scss */
 .adventures-teaser {
   margin-right: 0;
   color: white;
 }
 @media only screen and (max-width: 60em) {
-  /* line 788, ../sass/_adventures.scss */
+  /* line 814, ../sass/_adventures.scss */
   .adventures-teaser {
     margin-top: 24px;
     margin-top: 1.5rem;
     width: 100%;
   }
 }
-/* line 798, ../sass/_adventures.scss */
+/* line 824, ../sass/_adventures.scss */
 .adventures-teaser .more-link {
   display: block;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
-/* line 809, ../sass/_adventures.scss */
+/* line 835, ../sass/_adventures.scss */
 .erg-sulm-tri, .erg-verein, .news-teaser {
   min-height: 285px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 809, ../sass/_adventures.scss */
+  /* line 835, ../sass/_adventures.scss */
   .erg-sulm-tri, .erg-verein, .news-teaser {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 60em) {
-  /* line 822, ../sass/_adventures.scss */
+  /* line 848, ../sass/_adventures.scss */
   .erg-verein, .news-teaser {
     margin-top: 24px;
     margin-top: 1.5rem;
   }
 }
 
-/* line 832, ../sass/_adventures.scss */
+/* line 858, ../sass/_adventures.scss */
 #verein-landing-page .views-field-field-ergebnis-athleten .field-content .item-list:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 838, ../sass/_adventures.scss */
+/* line 864, ../sass/_adventures.scss */
 #verein-landing-page .views-field-field-ergebnis-athleten .weiter a {
   display: block;
 }
-/* line 841, ../sass/_adventures.scss */
+/* line 867, ../sass/_adventures.scss */
 #verein-landing-page .views-field-field-ergebnis-athleten ul {
   padding-left: 0;
 }
-/* line 843, ../sass/_adventures.scss */
+/* line 869, ../sass/_adventures.scss */
 #verein-landing-page .views-field-field-ergebnis-athleten ul li {
   list-style: none;
   list-style-image: none;
@@ -2854,36 +2888,36 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   float: left;
   color: white;
 }
-/* line 853, ../sass/_adventures.scss */
+/* line 879, ../sass/_adventures.scss */
 #verein-landing-page .views-field-field-ergebnis-athleten ul li:nth-child(3n+4) {
   clear: left;
 }
 
-/* line 861, ../sass/_adventures.scss */
+/* line 887, ../sass/_adventures.scss */
 .news-teaser {
   margin-right: 0;
   margin-right: 0;
 }
 
-/* line 870, ../sass/_adventures.scss */
+/* line 896, ../sass/_adventures.scss */
 .node-news-stefflhof-sulmsee h2 {
   margin-top: 0;
 }
-/* line 874, ../sass/_adventures.scss */
+/* line 900, ../sass/_adventures.scss */
 .node-news-stefflhof-sulmsee .field-name-body p {
   margin-bottom: 0;
 }
 
-/* line 883, ../sass/_adventures.scss */
+/* line 909, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 {
   padding-bottom: 15px;
   margin-top: -5px;
 }
-/* line 887, ../sass/_adventures.scss */
+/* line 913, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 .block-wrapper {
   padding-bottom: 1px;
 }
-/* line 891, ../sass/_adventures.scss */
+/* line 917, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 h2 {
   padding-top: 4px;
   padding-top: .25rem;
@@ -2892,67 +2926,67 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   margin-right: 32px;
   margin-right: 2rem;
 }
-/* line 900, ../sass/_adventures.scss */
+/* line 926, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 h2.block__title {
   display: none;
 }
-/* line 904, ../sass/_adventures.scss */
+/* line 930, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 .view-content .views-row {
   padding: 0 32px;
   padding: 0 2rem;
 }
-/* line 907, ../sass/_adventures.scss */
+/* line 933, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 .view-content .views-row .node-news-stefflhof-sulmsee {
   padding-bottom: 0;
   margin-bottom: 26px;
   margin-bottom: 1.6rem;
 }
-/* line 914, ../sass/_adventures.scss */
+/* line 940, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 h2, #block-views-news-landing-page-block-2 h3, #block-views-news-landing-page-block-2 p, #block-views-news-landing-page-block-2 a.more-link {
   color: white;
 }
-/* line 917, ../sass/_adventures.scss */
+/* line 943, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 h3, #block-views-news-landing-page-block-2 p {
   border-bottom: 0;
 }
-/* line 921, ../sass/_adventures.scss */
+/* line 947, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 p {
   margin-bottom: 0;
 }
-/* line 924, ../sass/_adventures.scss */
+/* line 950, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 p, #block-views-news-landing-page-block-2 a.more-link {
   font-size: 12px;
   font-size: .75rem;
 }
-/* line 929, ../sass/_adventures.scss */
+/* line 955, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 a.more-link {
   margin-top: 8px;
   margin-top: .5rem;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 935, ../sass/_adventures.scss */
+/* line 961, ../sass/_adventures.scss */
 #block-views-news-landing-page-block-2 a.more-link:hover {
   color: #009fe3 !important;
 }
 
-/* line 946, ../sass/_adventures.scss */
+/* line 972, ../sass/_adventures.scss */
 .views-responsive-grid-horizontal .views-column {
   float: left;
   width: 49%;
 }
-/* line 949, ../sass/_adventures.scss */
+/* line 975, ../sass/_adventures.scss */
 .views-responsive-grid-horizontal .views-column .column-title {
   color: #e7501f;
   text-transform: uppercase;
   font-size: 20px;
   font-size: 1.25rem;
 }
-/* line 956, ../sass/_adventures.scss */
+/* line 982, ../sass/_adventures.scss */
 .views-responsive-grid-horizontal .views-column-last {
   width: 50%;
 }
-/* line 959, ../sass/_adventures.scss */
+/* line 985, ../sass/_adventures.scss */
 .views-responsive-grid-horizontal .views-row {
   margin-bottom: 12px;
   margin-bottom: .75rem;
@@ -2961,46 +2995,46 @@ body.section-sulmsee-triathlon .responsive-menus.responsified .responsive-menus-
   border-bottom: 1px #D3D7D9 solid;
 }
 
-/* line 972, ../sass/_adventures.scss */
+/* line 998, ../sass/_adventures.scss */
 .node-athleten h2 {
   margin-top: 0;
   margin-bottom: .5em;
 }
 
-/* line 977, ../sass/_adventures.scss */
+/* line 1003, ../sass/_adventures.scss */
 .node-athleten .field-collection-container {
   border-top: 1px solid #D3D7D9;
   margin-top: 1em;
 }
-/* line 980, ../sass/_adventures.scss */
+/* line 1006, ../sass/_adventures.scss */
 .node-athleten .field-collection-container .field-collection-view {
   margin-left: 0;
 }
 
-/* line 986, ../sass/_adventures.scss */
+/* line 1012, ../sass/_adventures.scss */
 .field-collection-item-field-athleten-ergebnisse .right {
   padding-right: .3em;
 }
 
-/* line 995, ../sass/_adventures.scss */
+/* line 1021, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein {
   position: relative;
   z-index: 1;
   margin-top: 16px;
   margin-top: 1rem;
 }
-/* line 1000, ../sass/_adventures.scss */
+/* line 1026, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row {
   display: block;
   margin-bottom: 16px;
   margin-bottom: 2rem;
 }
-/* line 1009, ../sass/_adventures.scss */
+/* line 1035, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten
 ul {
   padding-left: 0;
 }
-/* line 1011, ../sass/_adventures.scss */
+/* line 1037, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten
 ul li {
   list-style: none;
@@ -3010,32 +3044,32 @@ ul li {
   width: 32%;
   float: left;
 }
-/* line 1020, ../sass/_adventures.scss */
+/* line 1046, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten
 ul li:nth-child(3n+4) {
   clear: left;
 }
-/* line 1023, ../sass/_adventures.scss */
+/* line 1049, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten
 ul li a {
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 1030, ../sass/_adventures.scss */
+/* line 1056, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-field-ergebnis-athleten .field-content .item-list:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 1036, ../sass/_adventures.scss */
+/* line 1062, ../sass/_adventures.scss */
 .not-front .view-ergebnisse-verein .views-row .views-field-view-node {
   padding-bottom: 16px;
   padding-bottom: 1rem;
 }
 
 @media only screen and (max-width: 44.25em) {
-  /* line 1048, ../sass/_adventures.scss */
+  /* line 1074, ../sass/_adventures.scss */
   .node-ergebnisse-verein .group-right,
   .node-ergebnisse-verein .group-left {
     clear: left;
@@ -3044,68 +3078,68 @@ ul li a {
   }
 }
 
-/* line 1059, ../sass/_adventures.scss */
+/* line 1085, ../sass/_adventures.scss */
 .fc-header {
   font-size: 22px;
   font-size: 1.375rem !important;
 }
 
-/* line 1065, ../sass/_adventures.scss */
+/* line 1091, ../sass/_adventures.scss */
 .fc-header-first {
   padding-right: 4px;
   padding-right: .25rem;
 }
 
-/* line 1070, ../sass/_adventures.scss */
+/* line 1096, ../sass/_adventures.scss */
 .fc-content {
   margin: 0;
 }
 
-/* line 1074, ../sass/_adventures.scss */
+/* line 1100, ../sass/_adventures.scss */
 .fc-comment {
   margin-top: 1em;
 }
 
-/* line 1079, ../sass/_adventures.scss */
+/* line 1105, ../sass/_adventures.scss */
 .field-slideshow-caption {
   background-color: #cccccc;
   border-bottom: 1px solid #999999;
 }
-/* line 1082, ../sass/_adventures.scss */
+/* line 1108, ../sass/_adventures.scss */
 .field-slideshow-caption span {
   padding: .5em;
   display: block;
   line-height: 1em;
 }
-/* line 1086, ../sass/_adventures.scss */
+/* line 1112, ../sass/_adventures.scss */
 .field-slideshow-caption span a {
   font-size: 14px;
   font-size: .875rem;
 }
 
-/* line 1094, ../sass/_adventures.scss */
+/* line 1120, ../sass/_adventures.scss */
 .field-slideshow-image {
   border: 1px solid #999999;
 }
 
-/* line 1103, ../sass/_adventures.scss */
+/* line 1129, ../sass/_adventures.scss */
 .field-name-field-bild-galerie a img {
   padding-right: 8px;
   padding-right: .5rem;
 }
-/* line 1108, ../sass/_adventures.scss */
+/* line 1134, ../sass/_adventures.scss */
 .field-name-field-bild-galerie a:nth-child(3n) img {
   padding-right: 0;
 }
 
-/* line 1121, ../sass/_adventures.scss */
+/* line 1147, ../sass/_adventures.scss */
 .page-sulmsee-triathlon-news .view-news-landing-page,
 .page-verein-stefflhof-news .view-news-landing-page,
 .view-bildergalerien {
   position: relative;
 }
 
-/* line 1129, ../sass/_adventures.scss */
+/* line 1155, ../sass/_adventures.scss */
 .node-news-stefflhof-sulmsee,
 .view-mode-bildergalerie_landing_page {
   margin-bottom: 32px;
@@ -3113,7 +3147,7 @@ ul li a {
   padding-bottom: 16px;
   padding-bottom: 1rem;
 }
-/* line 1135, ../sass/_adventures.scss */
+/* line 1161, ../sass/_adventures.scss */
 .node-news-stefflhof-sulmsee .group-left h2,
 .view-mode-bildergalerie_landing_page .group-left h2 {
   margin-top: 0;
@@ -3121,7 +3155,7 @@ ul li a {
   margin-bottom: .75rem;
   line-height: 1.375em;
 }
-/* line 1142, ../sass/_adventures.scss */
+/* line 1168, ../sass/_adventures.scss */
 .node-news-stefflhof-sulmsee .group-left p,
 .view-mode-bildergalerie_landing_page .group-left p {
   margin-top: 8px;
@@ -3130,36 +3164,36 @@ ul li a {
   margin-bottom: .5rem;
 }
 
-/* line 1155, ../sass/_adventures.scss */
+/* line 1181, ../sass/_adventures.scss */
 .section-sulmsee-triathlon .node-news-stefflhof-sulmsee h2 {
   color: #009fe3;
 }
 
-/* line 1160, ../sass/_adventures.scss */
+/* line 1186, ../sass/_adventures.scss */
 .more-link {
   display: block;
   text-align: left;
 }
 
-/* line 1171, ../sass/_adventures.scss */
+/* line 1197, ../sass/_adventures.scss */
 .not-front .panel-pane {
   position: relative;
   z-index: 1;
 }
-/* line 1174, ../sass/_adventures.scss */
+/* line 1200, ../sass/_adventures.scss */
 .not-front .panel-pane .ds-1col, .not-front .panel-pane .weather {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-/* line 1180, ../sass/_adventures.scss */
+/* line 1206, ../sass/_adventures.scss */
 .not-front .panel-pane .ds-1col .field-collection-container, .not-front .panel-pane .weather .field-collection-container {
   border-bottom: 0;
   margin-bottom: 0;
 }
 
-/* line 1192, ../sass/_adventures.scss */
+/* line 1218, ../sass/_adventures.scss */
 .panel-pane p.forecast, .panel-pane .weather-symbol {
   float: left;
   margin-top: 0;
@@ -3167,27 +3201,27 @@ ul li a {
   margin-right: 2rem;
 }
 
-/* line 1200, ../sass/_adventures.scss */
+/* line 1226, ../sass/_adventures.scss */
 .page-weather-austria-styria-graz-1 table {
   font-size: 12px;
   font-size: .75rem;
 }
-/* line 1203, ../sass/_adventures.scss */
+/* line 1229, ../sass/_adventures.scss */
 .page-weather-austria-styria-graz-1 table td {
   vertical-align: middle;
   text-align: center;
 }
-/* line 1206, ../sass/_adventures.scss */
+/* line 1232, ../sass/_adventures.scss */
 .page-weather-austria-styria-graz-1 table td span {
   font-size: 12px;
   font-size: .75rem;
 }
-/* line 1210, ../sass/_adventures.scss */
+/* line 1236, ../sass/_adventures.scss */
 .page-weather-austria-styria-graz-1 table td img {
   float: left;
 }
 
-/* line 1220, ../sass/_adventures.scss */
+/* line 1246, ../sass/_adventures.scss */
 footer p {
   padding: 5px 8px;
   padding: .3rem 1rem;
@@ -3199,12 +3233,12 @@ footer p {
   color: white;
   text-transform: uppercase;
 }
-/* line 1234, ../sass/_adventures.scss */
+/* line 1260, ../sass/_adventures.scss */
 footer p a {
   text-decoration: none;
   color: white;
 }
-/* line 1238, ../sass/_adventures.scss */
+/* line 1264, ../sass/_adventures.scss */
 footer p a:hover {
   color: #e7501f;
 }

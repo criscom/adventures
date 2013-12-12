@@ -17,6 +17,9 @@ $border-box-sizing: true;
 // criscom: Mixin variables ==> from SACFD _variables.scss line 20
 $defined-bs-type: border-box !default;
 
+$experimental-support-for-microsoft : true !default;
+
+
 // PATH TO CSS3 PIE
 // ====================================================================
 
@@ -32,6 +35,9 @@ $default-text-shadow-h-offset: 1px;
 
 // Importing CSS3PIE
 @import "compass/css3/pie";
+
+// Add Compass' IE and vendor prefix support variables.
+@import "compass/support";
 
 // Importing %placeholders
 @import "placeholders";
