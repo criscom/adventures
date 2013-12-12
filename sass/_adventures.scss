@@ -41,11 +41,13 @@ body {
 .region-sidebar-first,
 // .region-sidebar-second,
 #footer {
-  padding-right: .657894736%; // 8 / 1216
-  padding-left: .657894736%;
+  // padding-right: .657894736%; // 8 / 1216
+  // padding-left: .657894736%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
   @include MQ(S) {
 
-  }
+  } 
 }
 
 .region-sidebar-second {
@@ -131,12 +133,15 @@ body.section-sulmsee-triathlon {
 
 #content {
   position: relative;
-  padding-left: 1.5833333333% !important; // 19 / 1200
-  padding-right: 0 !important;
+  padding-left: 1.5833333333%; // 19 / 1200
+  padding-right: 0;
 }
 
 .front #content {
-  padding-left: 0 !important;
+    padding-right: .657894736%;
+    padding-left: .657894736% !important;
+    // padding-left: 0 !important;
+    // padding-right: 0;
 }
 
 // CONTENT NO SIDEBAR
@@ -172,6 +177,16 @@ body.section-sulmsee-triathlon {
     width: 100%;
     margin-left: 0;
   }
+}
+
+.sidebar-second .region-sidebar-second>.block,
+.group-right .block 
+{
+  padding-right: 2.07253886%; // 8 / 386
+}
+
+.group-right .field-slideshow-slide {
+  padding-right: 2px;
 }
 
 // CONTENT and right SIDEBAR
@@ -439,7 +454,8 @@ body.section-sulmsee-triathlon {
 
 #navigation {
   @include MQ(M) {
-    width: 99%;
+    width: 98%;
+    margin-left: 1%;
   }
 }
 
@@ -498,6 +514,9 @@ body.section-sulmsee-triathlon {
 #slideshow {
   margin-top: -40px;
   margin-top: -2.5rem;
+      padding-right: .657894736%;
+    padding-left: .657894736% !important;
+
   @include MQ(S) {
     margin-top: 20px;
     margin-top: 1.25rem;
@@ -577,6 +596,14 @@ body.section-sulmsee-triathlon {
       line-height: 28px;
       line-height: 1.75rem;
     }
+        @include MQ(M) {
+      padding-top: 1.75%;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 24px;
+      line-height: 1.5rem;
+    }
+
     @include MQ(Sextra) {
       padding-top: 1%;
       font-size: 14px;
@@ -755,9 +782,11 @@ body.section-sulmsee-triathlon {
   @extend %adv-gradient-sulmsee;
   line-height: 1;
   padding: 0;
-  min-height: 208px;
+  min-height: 206px;
+  @include MQ(XL) {
+  }
   @media only screen and (min-width: 961px) and (max-width: 67.3125em) {
-    min-height: 225px;
+    // min-height: 225px;
   }
   @include MQ(Sextra) {
     min-height: 209px;
@@ -773,7 +802,10 @@ body.section-sulmsee-triathlon {
   color: white;
   @extend %front-teaser-385-23;
   @extend %adv-gradient-sulmsee;
-  min-height: 208px;
+  min-height: 209px;
+  @media only screen and (max-width: 1200px) {
+    min-height: 206px;
+  }
   @include MQ(L) {
     width: 66.0833333%;
     margin-right: 0;
@@ -790,7 +822,7 @@ body.section-sulmsee-triathlon {
       position: top left;
       width: 100%;
       height: auto;
-    }
+      }
     width: 356px;
     height: 74px;
 
@@ -798,13 +830,15 @@ body.section-sulmsee-triathlon {
       background: {
       image: image-url('teaser-logo-front-sulmsee-tri-mq-xl.png');
       }
+      width: 280px;
+      height: 58px;
     }
 
   }
   .more-link {
     margin-top: 20px;
     @include MQ(L) {
-      margin-top: 4px;
+      margin-top: 2px;
     }
   }
 }
@@ -1243,26 +1277,32 @@ body.section-sulmsee-triathlon {
 
 // Impressum
 
-footer p {
-  padding: 5px 8px;
-  padding: .3rem 1rem;
-  margin: 0 0 32px;
-  @extend %adv-gradient;
-  vertical-align: middle;
-  font-family: $oswaldbook;
-  font-size: 22px;
-  font-size: 1.375rem;
-  color: white;
-  text-transform: uppercase;
-  .section-sulmsee-triathlon & {
-    @extend %adv-gradient-sulmsee;
+footer {
+  .block {
+  padding-right: .657894736%; // 8 / 1216
+  padding-left: .657894736%;
   }
-  a {
-    @extend %single-transition;
-    text-decoration: none;
+  p {
+    padding: 5px 8px;
+    padding: .3rem 1rem;
+    margin: 0 0 32px;
+    @extend %adv-gradient;
+    vertical-align: middle;
+    font-family: $oswaldbook;
+    font-size: 22px;
+    font-size: 1.375rem;
     color: white;
-    &:hover {
-      color: $red-top;
+    text-transform: uppercase;
+    .section-sulmsee-triathlon & {
+      @extend %adv-gradient-sulmsee;
+    }
+    a {
+      @extend %single-transition;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: $red-top;
+        }
+      }
     }
   }
-}
