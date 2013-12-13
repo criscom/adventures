@@ -36,8 +36,47 @@
     // News Detailseite Menüpunkt "VEREIN" aktiv setzen
         $("body.node-type-news-stefflhof-sulmsee li.menu-772 a").addClass("active-trail").addClass("active");
 
+//============================================
+//Give the boxes on the frontpage equal height
+//============================================
 
+//First row Image Teaser // Sulmsee Triathlon Teaser // Adventures Teaser 
+//============================================
 
+    var heightleft = $('.image-teaser').height();
+    var heightmiddle = $('.triathlon-teaser').height();
+    var heightright = $('.adventures-teaser').height();
+    if ((heightleft >= heightmiddle) && (heightleft >= heightright)) {
+      $('.triathlon-teaser').height(heightleft);
+      $('.adventures-teaser').height(heightleft);
+      } 
+    else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
+      $('.image-teaser').height(heightmiddle);
+      $('.adventures-teaser').height(heightmiddle);
+      } 
+    else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
+      $('.triathlon-teaser').height(heightright);
+      $('.image-teaser').height(heightright);
+    }
+
+//Second row Ergebnisse Sulmsee / Verein / News
+//============================================
+
+    var heightleft = $('.erg-sulm-tri').height();
+    var heightmiddle = $('.erg-verein').height();
+    var heightright = $('.news-teaser').height();
+    if ((heightleft >= heightmiddle) && (heightleft >= heightright)) {
+      $('.erg-verein').height(heightleft);
+      $('.news-teaser').height(heightleft);
+      } 
+    else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
+      $('.erg-sulm-tri').height(heightmiddle);
+      $('.news-teaser').height(heightmiddle);
+      } 
+    else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
+      $('.erg-verein').height(heightright);
+      $('.erg-sulm-tri').height(heightright);
+    }
 
   // $(".menu-block-4").mmenu({
   //  // options object

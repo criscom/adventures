@@ -135,6 +135,7 @@ body.section-sulmsee-triathlon {
   position: relative;
   padding-left: 1.5833333333%; // 19 / 1200
   padding-right: 0;
+  margin-top: 60px;
 }
 
 .front #content {
@@ -512,11 +513,15 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 #slideshow {
-  margin-top: -40px;
-  margin-top: -2.5rem;
-      padding-right: .657894736%;
-    padding-left: .657894736% !important;
-
+  // margin-top: -40px;
+  // margin-top: -2.5rem;
+  padding-right: .657894736%;
+  padding-left: .657894736% !important;
+  @include MQ(L) {
+    // margin-top: 12px;
+    // margin-top: .75rem;
+    margin-top: 0;
+  }
   @include MQ(S) {
     margin-top: 20px;
     margin-top: 1.25rem;
@@ -525,8 +530,8 @@ body.section-sulmsee-triathlon {
     // margin-top: 1.25rem;
 
   .ie & {
-    margin-top: 20px;
-    margin-top: 1.25rem;
+    margin-top: 12px;
+    margin-top: .75rem;
   }
   .region-highlighted .block {
       &:after {
@@ -544,6 +549,7 @@ body.section-sulmsee-triathlon {
 // Slideshow shadow
   .flexslider {
     @extend %box-shadow;
+    margin-bottom: 20px;
   }
 
 .slides li {
