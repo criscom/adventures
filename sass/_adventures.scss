@@ -8,11 +8,13 @@
  *
  * author: criscom
  * date: 20131104 / 04. November 2013
+ * last update: 20131214 / 14. Dezember 2013
  *
 **/ 
 
 * {
   @include bs;
+  outline: none;
 }
 
 body {
@@ -173,11 +175,19 @@ body.section-sulmsee-triathlon {
 .sidebar-second .region-sidebar-second {
   width: 32.16666667%; // 386 / 1200
   margin-left: 67.83333333%;
+  .ie8 & {
+    width: 32%;
+    margin-left: 68%;
+  }
   @include MQ(M) {
     clear: left;
     width: 100%;
     margin-left: 0;
   }
+}
+
+.sidebar-second .region-sidebar-second {
+  margin-top: 60px; // same as in #content line 134
 }
 
 .sidebar-second .region-sidebar-second>.block,
@@ -216,6 +226,27 @@ body.section-sulmsee-triathlon {
   margin-right: 1.5rem;
 }
 
+// ======================================
+// IE8 FIX
+// ======================================
+
+// The layout when there is only one sidebar, the right one.
+// ======================================
+
+ .lt-ie9 .sidebar-second {
+    #content { /* Span 3 columns, starting in 1st column from left. */
+      @include zen-grid-item(3, 1);
+      margin-right: -70%;
+      width: 70%;
+
+    }
+
+  .region-sidebar-second { /* Span 2 columns, starting in 4th column from left. */
+      @include zen-grid-item(2, 4);
+      margin-left: 70%;
+      width: 30%;
+    }
+  }
  
 
 // RIGHT SIDEBAR MENU
@@ -339,7 +370,7 @@ body.section-sulmsee-triathlon {
 // ============================================
 
 .header__region {
-      clear: none;
+    clear: none;
     float: right;
     margin-right: 14%; // 150 / 1200
   @include MQ(L) {
@@ -408,7 +439,7 @@ nav {
         @include MQ(M) {
 
         }
-        &:hover, &.active {
+        &:hover, &.active, &:active, &:focus {
           color: $red-top;
         }
       }
@@ -550,6 +581,9 @@ body.section-sulmsee-triathlon {
   .flexslider {
     @extend %box-shadow;
     margin-bottom: 20px;
+    .safari &, .chrome & {
+      margin-top: 25px;
+    }
   }
 
 .slides li {
@@ -595,6 +629,7 @@ body.section-sulmsee-triathlon {
     font-size: 1.75rem;
     line-height: 36px;
     line-height: 2.25rem;
+    font-family: $oswaldbook;
     @include MQ(L) {
       padding-top: 2.5%;
       font-size: 18px;
@@ -729,6 +764,9 @@ body.section-sulmsee-triathlon {
   }
   h3, h3 a, h4, h2.pane-title {
     letter-spacing: 0.0625em;
+    @include MQ(M) {
+      letter-spacing: 0;
+    }
   }
   .field-name-field-name-des-athleten a {
     font-size: 14px;
@@ -809,6 +847,9 @@ body.section-sulmsee-triathlon {
   @extend %front-teaser-385-23;
   @extend %adv-gradient-sulmsee;
   min-height: 209px;
+  .ie & {
+    min-height: 211px;
+  }
   @media only screen and (max-width: 1200px) {
     min-height: 206px;
   }
@@ -949,7 +990,7 @@ body.section-sulmsee-triathlon {
 #block-views-news-landing-page-block-2 {
   @extend %box-shadow-bottom;
   padding-bottom: 15px;
-  margin-top: -5px;
+  margin-top: -7px;
   .block-wrapper {
     @extend %adv-gradient-news;
     padding-bottom: 1px;
@@ -1004,6 +1045,22 @@ body.section-sulmsee-triathlon {
   }
 }
 
+// Datumsfeld im News Teaser Block auf der Startseite
+.date-field {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: $oswaldbook;
+}
+
+.date-news {
+  color: $red-top;
+}
+
+.fc-event-title {
+  display: block;
+}
+
 // ============================================
 // OVERVIEW PAGES: VEREIN, ATHLETEN
 // ============================================
@@ -1012,6 +1069,8 @@ body.section-sulmsee-triathlon {
   .views-column {
     float: left;
     width: 49%;
+    margin-top: 24px;
+    margin-top: 1.5rem;
     .column-title {
       color: $red-top;
       text-transform: uppercase;
@@ -1063,6 +1122,10 @@ body.section-sulmsee-triathlon {
   z-index: 1;
   margin-top: 16px;
   margin-top: 1rem;
+  h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
   .views-row {
     @extend %box-shadow-bottom;
     display: block;
@@ -1082,11 +1145,18 @@ body.section-sulmsee-triathlon {
           padding-bottom: 16px;
           padding-bottom: 1rem;
           width: 32%;
+          min-height: 88px;
+          @include MQ(L) {
+            width: 50%;
+          }
           float: left;
           &:nth-child(3n+4) {
             clear: left;
+            @include MQ(L) {
+              clear: none 
+            }
           }
-          a {
+          .field-name-field-athleten-name, a {
             @extend %link;
             font-size: 18px;
             font-size: 1.125rem;
@@ -1105,6 +1175,10 @@ body.section-sulmsee-triathlon {
       padding-bottom: 1rem;
     }
   }
+}
+
+.group-header .field-name-field-name-des-athleten {
+  display: none !important;
 }
 
 // ERGEBNISSE VEREIN DETAIL
@@ -1146,19 +1220,30 @@ body.section-sulmsee-triathlon {
   background-color: lighten(black, 80%);
   border-bottom: 1px solid lighten(black, 60%);
   span {
-    padding: .5em;
     display: block;
-    line-height: 1em;
+    padding: .5em 1em;
+    line-height: .5em;
     a {
       font-size: 14px;
       font-size: .875rem;
       @extend %single-transition;
+      text-decoration: underline !important;
     }
   }
 }
 
 .field-slideshow-image {
   border: 1px solid lighten(black, 60%);
+}
+
+.field-name-ergebnisse-slideshow-hinweis p {
+  @extend .field-slideshow-caption;
+  padding: .5em;
+  font-size: 12px;
+  font-size: .75rem;
+  font-style: italic;
+  margin-right: 8px;
+  margin-right: .5rem;
 }
 
 // Ergebnisse Verein Detail END
@@ -1180,10 +1265,13 @@ body.section-sulmsee-triathlon {
 // VEREIN Bildergalerie landing page
 // VEREIN NEWS landing page
 // SULMSEE TRIATHLON NEWS landing page
+// TERMINE landing page
 // ============================================
 
 .page-sulmsee-triathlon-news .view-news-landing-page,
 .page-verein-stefflhof-news .view-news-landing-page,
+.page-verein-stefflhof-termine .view-termine-vereinsaktivit-ten, // Termine Übersicht
+.page-verein-stefflhof-archiv .view-termine-vereinsaktivit-ten, // Termine Archiv
 .view-bildergalerien {
   position: relative;
   .view-content .views-row {
@@ -1192,6 +1280,9 @@ body.section-sulmsee-triathlon {
 }
 
 .node-news-stefflhof-sulmsee,
+.page-verein-stefflhof-termine .view-termine-vereinsaktivit-ten, // Termine Übersicht
+.page-verein-stefflhof-archiv .view-termine-vereinsaktivit-ten, // Termine Archiv
+.fc-view, // Termine Kalender
 .view-mode-bildergalerie_landing_page {
   margin-bottom: 32px;
   margin-bottom: 2rem;
@@ -1228,6 +1319,28 @@ body.section-sulmsee-triathlon {
   text-align: left;
 }
 
+.terminkalender { // LInk zum Terminkalender im Teaser Blocka auf der Startseite
+  text-transform: uppercase;
+}
+
+.fc-event-title {
+  @include hyphens(auto);
+}
+
+.node-termin-verein {
+ .download-file {
+  margin-top: 0;
+ }
+  .date-field.date-news {
+    padding-bottom: 12px;
+    padding-bottom: .75rem;
+  }
+  .field-name-body {
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+}
 // ============================================
 // SULMSEE TRIATHLON LANDING PAGE
 // ============================================

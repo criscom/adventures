@@ -11,7 +11,8 @@
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
 <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
 <!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html class="no-js"<?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head>
   <?php print $head; ?>
@@ -22,7 +23,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width">
   <?php endif; ?>
-  <meta http-equiv="cleartype" content="on">
+<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
