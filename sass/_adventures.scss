@@ -729,6 +729,10 @@ body.section-sulmsee-triathlon {
   padding: 0;
 }
 
+.inside.panels-flexible-region-inside.panels-flexible-region-1-ergenisse_sulm_tri-inside.panels-flexible-region-inside-first {
+padding-left: 0.5em;
+}
+
 .panels-flexible-row {
   z-index: 5;
   background:#FFF;
@@ -863,10 +867,11 @@ body.section-sulmsee-triathlon {
   h2 {
     @include hide-text;
     background: {
-      image: image-url('teaser-logo-front-sulmsee-tri.png');
+      image: image-url('PlankseeTriathlonLogo_weiss.png');
+      //image: image-url('teaser-logo-front-sulmsee-tri.png');
       //image: image-url('stefflhof_weiss.svg');
       repeat: no-repeat;
-      position: top left;
+      position: 0 6px;
       width: 100%;
       height: auto;
       }
@@ -982,6 +987,10 @@ body.section-sulmsee-triathlon {
       margin-bottom: 0;
     }
   }
+}
+
+.panels-flexible-1 .panels-flexible-row-last {
+  padding-bottom: 0.5em !important;
 }
 
 // Sulmsee Triathlon NEWS Block
