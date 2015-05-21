@@ -1288,6 +1288,15 @@ padding-left: 0.5em;
   }
 }
 
+.page-sulmsee-triathlon-news .view-news-landing-page,
+.page-verein-stefflhof-news .view-news-landing-page {
+  .date-field {
+    span {
+      color: rgb(102,102,102);
+    }
+  }
+}
+
 .node-news-stefflhof-sulmsee,
 .page-verein-stefflhof-termine .view-termine-vereinsaktivit-ten, // Termine Übersicht
 .page-verein-stefflhof-archiv .view-termine-vereinsaktivit-ten, // Termine Archiv
